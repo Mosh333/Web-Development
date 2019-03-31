@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title id="page-title">tma1.htm</title>
+    <link rel="stylesheet" href="./shared/main.css">
+  </head>
+  <body>
+  
+  <h1>Comp 466 - Assignment#1 Homepage</h1>
+    <!-- Navbar -->
+    <div class="topnav">
+      <a class="active">Home</a>
+      <a href='./part1/part1.xml'>Part 1</a>
+      <a href='./part2/part2.htm'>Part 2</a>
+      <a href='./part3/part3.htm'>Part 3</a>
+      <a href='./part4/part4.htm'>Part 4</a>
+      <a href='./shared/doc.htm'>Full Documentation</a>
+<!--       <a href="#contact">Contact</a>
+      <a href="#about">About</a> -->
+    </div>
+    
+    <p style='margin-left:30px'>Welcome to my assignment#1 webpage!</p>
+    <br>
+    <div class="homepageInfo">
+        <h3>Assignment #1 Cover Page</h3>
+        <p>Comp 466 - Computer Science 466: Advanced <br> Technologies for Web-Based Systems</p>
+        <p>Moshiur Howlader - ID Num 3393617</p>
+        <p>Start Date: August 20, 2018</p>
+        <p>Completetion Date: November 13, 2018</p>
+        <p>Total Hours Spent: 300 Hours</p>
+    </div>
+    <div id=homepageInstruction'>
+        <div class="accordionContainer">
+            <button class="accordion">Instructions</button>
+            <div class="panel" id="panel">
+              <p>
+                Click Each Tab to read details about each section of the assignment. <br>
+                            
+              </p> 
+            </div>
+            <br>
+            <button class="accordion">Part 1</button>
+            <div class="panel" id="panel">
+              <p>This part of the assignment will contain my resume in XML.</p>
+            </div>
+            <br>
+            <button class="accordion">Part 2</button>
+            <div class="panel" id="panel">
+              <p>This part of the assignment will be a quiz system to learn about Units 1-3 Comp 466</p>
+            </div>
+            <br>
+            <button class="accordion">Part 3</button>
+            <div class="panel" id="panel">
+              <p>This part of the assignment will be a slideshow application.</p>
+            </div>    
+            <br>
+            <button class="accordion">Part 4</button>
+            <div class="panel" id="panel">
+              <p>This part of the assignment will be various utility tools.</p>             
+            </div>
+            <br>
+            <button class="closeAccordion" id="closeAccordion">Close All Tabs</button>
+            <div class="panel" id="panel">             
+            </div>
+            <br>
+        </div>
+    </div>
+    <div id="hacksLearned">
+        <h3 align="center">Tips and Tricks Learned in Assignment#1</h3>
+        <p>You should reload or 'Ctrl-F5' to reload page forcefully. <br>
+            Otherwise smart browsers will just use cache with old<br>
+            webpage/code to render the "current webpage". Also clearing
+            cache can help. Sometimes writing couple console.log() statements
+            help to know you are running the latest version of your code.
+        </p>
+            
+        <p>Try to use relative styling versus absolute styling for more
+        webpage flexibility.</p>
+    
+        <p>Make Sure to Include Javascript Links at end to ensure
+        page elements are loaded first.</p>
+        
+    </div>
+    <div id="documentation">
+        <h3 align="center">Documentation for tma1.htm</h3>
+        <p>To create tma1.htm, a top navbar was used as shown above.
+        This navbar is used to allow the user to navigate any part of the assignment.
+        As requested for tma1.htm, a cover page which contains all the details is presented.
+        <br/><br/>
+        An accordion/collapsible menu is also created with some Javascript logic to allow
+        user to find out more details about each link found in the navbar. All the opened
+        panels can be closed by click "Close All Tabs".
+        <br/><br/>
+        Also a section for "Tips and Tricks Learned in Assignment#1" is added to take up
+        extra blank space in the web page and to add some insightful tricks that may prove useful
+        later in the course.
+        <br/><br/>
+        To allow a consistent feel of the web application/site, the top nav bar and the footer
+        is used to give the feeling of being in the same web site.
+        </p>
+    </div>
+    <div id="assignmentLink" style="margin-left: 30px">
+        <a class="tma1Link tma1Link1" href="./shared/assignment_1.pdf" download> Download Assignment#1 PDF</a>
+        <br/><br/>
+        <a target="_blank" class="tma1Link tma1Link2" href="./shared/assignment_1.pdf">View Assignment#1 PDF</a>
+    </div>
+    
+    <footer>
+        <hr id="footerLine"></hr>
+        Copyright &copy; 2018 Moshiur Howlader. All rights reserved. <br/>
+    </footer>
+    <script src="tma1.js"></script>
+  </body>
+</html>
