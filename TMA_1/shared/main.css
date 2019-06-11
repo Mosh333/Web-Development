@@ -1,0 +1,792 @@
+
+
+/*Generic Styling Across All Pages    */
+/**********************************************/
+/* Top Nav Bar */
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+h1 {
+    margin-left: 30px;
+}
+
+footer{
+    background-color:#dfdae5;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    /* set margin and padding 0*/
+    margin:0;
+    padding:0;
+    height: 32px;
+}
+
+html, body {
+  /*overflow-x: hidden;*/
+  margin:0;   /* remove margin from the entire web page */
+}
+
+/**********************************************/
+
+
+/* tma1.htm Styling and generic Styling for other pages*/
+/**********************************************/
+/*Cover Page Styling*/
+.homepageInfo {
+    position: absolute;
+    width: 300px;
+    max-width: 300px;
+    max-height: 400px;
+    border: 25px solid green;
+    padding: 15px;
+    margin: 25px;
+    margin-top: 0px !important;
+}
+
+.accordionContainer{
+    position: relative;
+    margin-left: 550px;
+    width: 300px;
+    max-width: 300px;
+    height: 318px;
+    max-height: 318px;
+    display: inline-block;
+    float: left; /*https://stackoverflow.com/questions/3794770/prevent-divs-from-taking-100-width */
+    /* padding-bottom: 500px; */
+}
+
+/*Collapsible Instruction List*/
+.accordion, .closeAccordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    margin-left: 50px;
+    width: 300px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover, .closeAccordion:hover {
+    background-color: #ccc; 
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: #7589a8;
+    overflow: hidden;
+    width: 264px;
+    margin-left: 50px;
+    margin-bottom: -18px !important;
+}
+
+#hacksLearned{
+    position: relative;
+    margin-left: 25px;
+    width: 400px;
+    border: 5px solid black;
+    padding: 5px;
+    margin-top: 400px;
+    margin-left: 600px;
+    z-index: -1;
+}
+
+#documentation{
+    position: relative;
+    width: 400px;
+    margin-top: -307px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    border: 5px solid black;
+    padding: 5px;
+    padding-left: 10px !important;
+    padding-bottom: 10px !important;
+/*     margin-left: 25px;
+    width: 400px;
+    border: 5px solid black;
+    padding: 5px;
+    margin-top: -800px;
+    margin-left: 0px;
+    z-index: -1; */
+}
+
+.tma1Link{
+    margin-left: 50px !important;
+}
+
+.tma1Link2{
+    margin-bottom: 50px;
+}
+/**********************************************/
+
+/* part2.htm and Unit 1 specific Styling */
+/**********************************************/
+#AvenueToQuizLogo{
+    height: 85px;
+    position: relative;
+    margin-left: 50px;
+/*     width: 42px; */
+}
+
+.accordionPart2, .panelPart2{
+    width: 550px !important;
+}
+
+.panelPart2{
+    padding: 0 0px !important;
+}
+
+.brand{
+    font-size: 20px;
+    font-weight:bold;
+    font-style:italic;    
+}
+
+.highlight1{
+    text-decoration: underline;
+}
+
+.tma1Link, .gotIt, .quizLink1, .quizLink2, .quizLink3, .quizList, .quizList_delete,
+.editStyles, .addQuestion, .submitNewQuiz, .submitQuiz {
+/* 	-moz-box-shadow: 0px 10px 14px -7px #3e7327;
+	-webkit-box-shadow: 0px 10px 14px -7px #3e7327;
+	box-shadow: 0px 10px 14px -7px #3e7327; */ /* can uncomment for shade */
+	background-color:#77b55a !important;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #4b8f29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5b8a3c;
+    margin-left: 225px;
+}
+
+.tma1Link:hover, .gotIt:hover, .quizLink1:hover, .quizLink2:hover, .quizLink3:hover, .quizList:hover,
+.editStyles:hover, .addQuestion:hover, .quizList_delete:hover, .submitNewQuiz:hover, .submitQuiz:hover {
+	background-color:#72b352;
+}
+.tma1Link:active, .gotIt:active , .quizLink1:active, .quizLink2:active, .quizLink3:active, .quizList:active,
+.editStyles:hover, .addQuestion:hover, .quizList_delete:active, .submitNewQuiz:active, .submitQuiz:active {
+    background-color:#72b352;
+	position:relative;
+	top:1px;
+}
+
+/* .quizLinkDiv, .quizLink1:hover, .quizLinkDiv:active {
+	background-color:#77b55a !important;
+} */
+
+.AvenueToQuizBorder{
+    border: 1px solid green;
+    background-color: grey;
+    /* margin-top: 50px; */
+    margin-left: 50px;
+    height: 750px;
+    width: 700px;
+    margin-bottom: 30px;
+}
+
+#AvenueToQuizLogo{
+    padding-top: 10px;
+}
+
+.AvenueToQuizContainer{
+    margin-left: 50px;
+}
+
+/* Style the tab */
+.AvenueToQuizContainer {
+    overflow: scroll; /* make it a scroll bar web application */
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    height: 600px;
+    width: 600px;
+    margin-bottom: 50px;
+}
+
+/* Style the buttons inside the tab */
+/* .AvenueToQuizContainer button { */
+.tablinks {
+    background-color: black;inherit;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    z-index: 0;
+}
+
+.fillertablinks {
+    background-color: black;inherit;
+    color: black;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    z-index: 0;
+    cursor: default;
+}
+
+/* Change background color of buttons on hover */
+/* .AvenueToQuizContainer button:hover { */
+.tablinks:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+/* .AvenueToQuizContainer button.active { */
+.tablinks:active {
+    background-color: #ccc;
+}
+
+.tab{
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+}
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px !important;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.unit1 {
+    display: none;
+    padding: 6px 12px !important;
+    border: 1px solid #ccc;
+    border-top: none;
+    height: 4800px;
+}
+
+.tabcontentdivider{
+    width:567px;
+    margin-top: -5px;
+    margin-left: -25px;
+}
+
+.tutorialLink:link, .tutorialLink:visited {
+    background-color: #f4f5f7;
+    color: black;
+    border: 2px solid #3e660a;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.tutorialLink:hover, .tutorialLink:active {
+    background-color: #3e660a;
+    color: white;
+}
+
+.HTMLboiler{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 250px;
+    background-color: white;
+    margin-left: 25px;
+    padding-left: 5px;
+}
+
+.Inputboiler{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 500px;
+    background-color: white;
+    margin-left: 25px;
+    padding-left: 5px;
+}
+
+.CSSTutorial1{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 220px;
+    background-color: white;
+    margin-left: 10px;
+    padding-left: 5px;
+}
+
+.CSSTutorial2{
+    position: relative;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 300px;
+    background-color: white;
+    margin-left: 250px;
+    padding-left: 5px;
+    margin-top: -560px;
+}
+
+.CSSTutorial3{
+    position: relative;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 300px;
+    background-color: #f9fbff;
+    margin-left: 250px;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+.CSSTutorial3b{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 540px;
+    background-color: #f9fbff;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+#loremIpsum{
+    overflow: none;
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #555559;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+#unit1Video{
+    height: 300px;
+    width: 450px;
+}
+/**********************************************/
+
+/* part2.htm's Unit 2 Styling */
+/**********************************************/
+.javascriptBoiler{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 400px;
+    background-color: white;
+    margin-left: 25px;
+    padding-left: 5px;    
+}
+
+.unit2 {
+    display: none;
+    padding: 6px 12px !important;
+    border: 1px solid #ccc;
+    border-top: none;
+    height: 10875px;
+}
+
+.tabcontentdivider2{
+    width:592px;
+    margin-top: -5px;
+    margin-left: -25px;
+}
+
+.Unit2Explanation{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 500px;
+    background-color: #f9fbff;
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+/**********************************************/
+
+/* part2.htm's Unit 3 Styling */
+/**********************************************/
+.XMLboiler{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 400px;
+    background-color: white;
+    margin-left: 25px;
+    padding-left: 5px;    
+}
+
+.Unit3Explanation{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 500px;
+    background-color: #f9fbff;
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.tabcontentdivider3{
+    width:592px;
+    margin-top: -5px;
+    margin-left: -25px;
+}
+
+.pdfViewer{
+    overflow: none;
+    height: 500px;
+    width: 550px;
+    border: 1px solid black;
+}
+
+/**********************************************/
+
+/* part2.htm's Try Quiz Styling */
+/**********************************************/
+
+.quizMenu, .quizMenu:link, .quizMenu:visited, 
+.editMenu, .editMenu:link, .editMenu:visited{
+    background-color: #f4f5f7;
+    color: black;
+    border: 2px solid #3e660a;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.quizMenu:hover, .quizMenu:active,
+.editMenu:hover, .editMenu:active {
+    background-color: #3e660a;
+    color: white;
+    cursor: pointer;
+}
+
+.QuizContainer{
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    padding-top: -10px;
+    margin-top: 5px;
+}
+
+.submitQuiz{
+    margin-left: 216.5px !important;
+}
+
+.quizTitle{
+    padding-left: 20px;
+}
+.questionContainer{
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #3a587f; /* #5b7091; */
+    color: white; /* #f2f5f9; */
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+.choiceA, .choiceB, .choiceC, .choiceD{
+    /* margin-top: -10px; */
+    /* margin-left: 10px; */
+    /* width: 530px; */
+    margin-left: 22px;
+    margin-top: -20px;
+}
+
+.chartContainer{
+    background-color: red;
+    height: 24px;
+    margin-left: 70px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.quizList, .quizList_delete{
+    margin-left: 10px !important;
+}
+
+.editQuizQuestion{
+    margin-bottom: -2px;
+    margin-left: 10px;
+    width: 300px;
+}
+
+.confirmDelete{
+    max-width: 200px;
+    display: inline-block
+}
+.editQuizChoices{
+    margin-top: 10px;
+    margin-right: 300px;
+    margin-left: 10px;
+    width: 200px;
+}
+
+.editQuizTexts{
+    display: inline-block;
+    margin-bottom: -10px;
+}
+
+.deleteQuizOption{
+    margin-top: -10px;
+    margin-left: 10px;
+    margin-bottom: -40px;
+}
+
+/**********************************************/
+
+/* part3.htm's Styling */
+/**********************************************/
+#part3Canvas{
+    margin-left: 150px;
+/*     width: 640px;
+    height: 480px; */
+/*     width: 1280px;
+    height: 960px; */
+    border: 1px solid #000000;
+}
+
+#prevArrow{
+    margin-top: 30px;
+
+}
+
+#prevButton, #nextButton, #startStopButton,
+#shuffleShow {
+/* 	-moz-box-shadow: 0px 10px 14px -7px #3e7327;
+	-webkit-box-shadow: 0px 10px 14px -7px #3e7327;
+	box-shadow: 0px 10px 14px -7px #3e7327; */ /* can uncomment for shade */
+	background-color:#77b55a;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #4b8f29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5b8a3c;
+}
+
+#prevButton:hover, #nextButton:hover, #startStopButton:hover,
+#shuffleShow:hover {
+	background-color:#72b352;
+}
+#prevButton:active, #nextButton:active, #startStopButton:active,
+#shuffleShow:active {
+    background-color:#72b352;
+	position:relative;
+	top:1px;
+}
+
+#prevButton{
+    margin-left: 350px;
+}
+
+#shuffleShow{
+    /* position: absolute; */
+    margin-left: 100px;
+    margin-top: -85px;
+}
+
+#startStopButtonContainer{
+    height: 25px;
+    width: 18px;
+
+}
+#startStopButton {
+    display: inline-block; /*when you want multiple things in line*/
+    margin-top: 4px;
+    margin-left: 0px;
+    margin-top: -6px;
+    font-size: 125%;
+    height: 25px;
+    width: 18px;
+}
+
+#nextButton{
+    margin-left: 0px;
+    margin-top: -80px;
+}
+
+#selectTransition{
+    position: absolute;
+    margin-left: 200px;
+    /* margin-top: -70px; */
+}
+
+
+/**********************************************/
+
+/* part4.htm's Styling */
+/**********************************************/
+/* Style the tab */
+.Part4Container {
+    margin-left: 50px;
+    overflow: scroll; /* make it a scroll bar web application */
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    height: 400px;
+    width: 432px;
+    margin-bottom: 50px;
+}
+
+.pt4_tablinks {
+    background-color: black;inherit;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    z-index: 0;
+}
+
+#Tab1{
+    margin-left: 0px;
+    width: 388px;
+    border: 1px solid green;
+}
+
+#measurementType{
+    height: 35px;
+    width: 100px;
+    font-size: 20px;
+}
+
+#measurementInput1{
+    height: 35px;
+    font-size: 18px;
+}
+
+#measurementInput2{
+    height: 35px;
+    font-size: 18px;
+}
+
+#measurementSelect1{
+    height: 35px;
+    margin-top: 20px;
+}
+
+#measurementSelect2{
+    height: 35px;
+}
+
+#Tab2_sub1{
+    margin-left: 0px;
+    width: 388px;
+    border: 1px solid green;
+}
+
+#principal, #interest, #duration{
+    height: 35px;
+    margin-top: 20px;    
+}
+
+#payFreq{
+    height: 25px;
+}
+
+.ytFileGenTut1{
+    position: absolute;
+    margin-left: 800px;
+    margin-top: -750px;
+    height: 300px;
+    width: 400px;
+}
+
+.ytFileGenTut2{
+    position: absolute;
+    margin-left: 800px;
+    margin-top: -400px;
+    height: 300px;
+    width: 400px; 
+}
+
+#sampleYtFile:link, #sampleYtFile:visited {
+    position: absolute;
+    margin-top: -172px;
+    margin-left: 403px;
+    background-color: black;/*#f4f5f7;*/
+    color: white;
+    border: 2px solid black;/*#3e660a;*/
+    padding: 25px 9px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 197px;
+    height: 14px;
+}
+
+#sampleYtFile:hover, #sampleYtFile:active {
+    background-color: #3e660a;
+    border: 2px solid #3e660a;
+    color: white;
+}
+/**********************************************/
+
+/* doc.htm's Styling */
+/**********************************************/
+.pdfDocViewer{
+    margin-top: 50px;
+    margin-left: 50px;
+    overflow: none;
+    height: 800px;
+    width: 800px;
+    border: 1px solid black;
+}

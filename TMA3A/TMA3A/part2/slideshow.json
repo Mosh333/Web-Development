@@ -1,0 +1,13 @@
+{
+"img": ["images\\car1.jpg", "images\\car2.jpg", "images\\cat1.jpg", "images\\cat2.jpg",
+"images\\cat3.jpg", "images\\cat4.jpg", "images\\city1.jpg", "images\\desert1.jpg",
+"images\\desert2.jpg", "images\\grass1.jpg", "images\\mountain1.jpg", "images\\mountain2.jpg",
+"images\\mountain3.jpg", "images\\ocean1.jpg", "images\\ocean2.jpg", "images\\ocean3.jpg",
+"images\\road1.jpg", "images\\rocks1.jpg", "images\\scenery1.jpg", "images\\sky1.jpg"],
+            
+"caption": ["Mt. Fuji", "Ancient Japan", "\"Meow!\"", "\"Contemplating Life\"", "\"Sneaky Sneaky\"",
+"\"Oh noes!\"", "A beautiful city!", "An Arabian Night!", "An Arabian Day!", "Grassland!",
+"Beautiful Swiss Mountain!", "Sunset on Mountain View.", "Beautiful Swiss Climate!",
+"Emirati Ocean!", "Beautiful Seaside View", "Sunset at the Beach", "Life is a journey.",
+"Rocks can be artistic too!", "Time for Autumn!", "Reach the Skies!"]
+}

@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<course courseCode="Comp466" courseType="Computer Science" courseName="ADVANCED TECHNOLOGIES FOR WEB-BASED SYSTEMS">
+    
+    <announcements>
+        <!-- Use Y/M/D -->
+        <announce date="2018-09-05">
+            Week 1 - The Web contents uploaded. Please review your course syllabus and review Week 1 contents please!
+            <document src="Comp466_Syllabus.pdf"></document>
+        </announce>        
+        <announce date="2018-09-12">
+            Week 2 - HTML contents uploaded. Please try practising  writing basic HTML at home and get comfortable with it!
+            Next week will upload Assignment#1, and update some of the links for the first few sections!
+        </announce>        
+        <announce date="2018-09-19">
+            Week 3 - CSS: The Basics uploaded. Quiz #1 uploaded!
+            Please submit assignment #1 through Educord. It is due October 6.
+        </announce>        
+        <announce date="2018-09-26">
+            Week 4 - CSS: Advanced Stuff uploaded. Please complete Quiz#1 by October 4.
+            Quiz #1 covers Weeks 1 to 4.
+            Please submit assignment #1 through Educord. It is due October 6.
+        </announce>        
+        <announce date="2018-10-03">
+            Week 5 - JavaScript: The Fundamentals uploaded. Assignment #2 uploaded.
+            Please submit assignment #2 through Educord. It is due October 31.            
+        </announce>        
+        <announce date="2018-10-10">
+            Week 6 - AJAX and XML uploaded. Quiz #2 uploaded.
+            Quiz #2 covers Weeks 5 and 6. This quiz is due October 18.
+        </announce>        
+        <announce date="2018-10-17">
+            Week 7 - Databases for the Web uploaded. 
+            Quiz #3 uploaded. This quiz is due November 4, and covers Weeks 7 and 8.
+        </announce>        
+        <announce date="2018-10-24">
+            Week 8 - Fundamentals of PHP uploaded.
+        </announce>
+        <announce date="2018-10-31">
+            This week no course updates. I will be away on a conference. Please note the final
+            assignment, assignment#3 will be due last day of classes (December 3), and involves
+            the last few weeks of class. The TA will cover the lectures this week. Next week
+            will upload the remaining course materials. Good luck.
+        </announce>
+    </announcements>
+    
+    <modules>
+        <module week="1" title="The Web">
+            <heading>History of the Internet/Web</heading>
+            <line></line>
+            <desc>Below are links to help you learn the history of the Internet. The first link
+            talks about the overall history and the invention of the internet in a text article.
+            The next two links help summarize the history in a brief, easy to understand way.
+            </desc>
+            <link src="https://webfoundation.org/about/vision/history-of-the-web/">WWW History</link>
+            <video src="https://www.youtube.com/watch?v=1CsPHKJWiw0">The Beginnings of WWW</video>
+            <video src="https://www.youtube.com/watch?v=eYkXD_cGUYU">The Web 2.0</video>
+        </module>
+        <module week="2" title="HTML">
+            <!-- heading is h1 with a horizontal line break -->
+            <!-- subheading is simply a h3 -->
+            <heading>HTML - HyperText Markup Language</heading>
+            <line></line>
+            <subheading>HTML 5 Tags</subheading>
+            <desc>Below is a boilerplate of how to create an html file.
+            Make sure to save the file as an .htm or .html file!
+            Enter your page title found in the tab of the browser in
+            &lt;title&gt;. If you want to link your CSS stylesheets,
+            include the file within the &lt;head&gt; tag. Finally,
+            enter your webpage contents (HTML elements) in the
+            &lt;body&gt; tag!</desc>
+            <code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt; 
+                &lt;head&gt; 
+                &lt;meta charset="UTF-8"&gt; 
+                &lt;title&gt;title&lt;/title&gt; 
+                &lt;/head&gt; 
+                &lt;body&gt; 
+                &lt;/body&gt; 
+                &lt;/html&gt;             
+            </code>
+            
+            <desc>Below is a summary of useful HTML5 tags</desc>
+            <table>
+                <row>
+                    <col>&lt;A&gt;</col>
+                    <col>Anchor (most commonly a link)</col>
+                    <col>Vital. Use to create links in content. Use the title attribute whenever the contents of the &lt;a&gt;A&lt;/a&gt; pair do not accurately describe what you'll get from selecting the link. Title attribute often displays as a tooltip in visual browsers, which may be a helpful usability aid.</col>
+                </row>
+                <row>
+                    <col>&lt;BODY&gt;</col>
+                    <col>Document body</col>
+                    <col>Essential (unless you're using frames)</col>
+                </row>
+                <row>
+                    <col>&lt;BR&gt;</col>
+                    <col>Line break</col>
+                    <col>This is arguably display information. Still in common use, but use with restraint.</col>
+                </row>
+                <row>
+                    <col>&lt;BUTTON&gt;</col>
+                    <col>Used for a standard clickable button within a form</col>
+                    <col>Often better than <input type="button" /> or <input type="submit" />, as it allows you to assign different styles based on the HTML element alone, whereas differentiating style based on the type of input is less well supported.</col>
+                </row>
+                <row>
+                    <col>&lt;CAPTION&gt;</col>
+                    <col>Caption for a table: describes the table's contents</col>
+                    <col>The correct way to assign a title to a table</col>
+                </row>
+                <row>
+                    <col>&lt;DIV&gt;</col>
+                    <col>Division</col>
+                    <col>Specifies a logical division within a document. Use it to separate or identify chunks of content that are not otherwise distinguished naturally using other tags. One of the most common HTML tags.</col>
+                </row>
+                <row>
+                    <col>&lt;EM&gt;</col>
+                    <col>Emphasis</col>
+                    <col>Commonly used in place of the old &lt;i&gt; (italics) tag to indicate emphasis (but less than &lt;strong&gt;)</col>
+                </row>
+                <row>
+                    <col>&lt;FORM&gt;</col>
+                    <col>Input form</col>
+                    <col>Essential for data input</col>
+                </row>
+                <row>
+                    <col>&lt;H#&gt;</col>
+                    <col>Header</col>
+                    <col>H1 largest header size. H6 smallest header size.</col>
+                </row>
+                <row>
+                    <col>&lt;HEAD&gt;</col>
+                    <col>Document head</col>
+                    <col>Essential. Contains information about a page that does not constitute content to be communicated as part of the page.</col>
+                </row>
+                <row>
+                    <col>&lt;HTML&gt;</col>
+                    <col>What it is.</col>
+                    <col>Core element of every web page.</col>
+                </row>
+                <row>
+                    <col>&lt;IMG&gt;</col>
+                    <col>Show an image</col>
+                    <col>Vital. Always use the alt or longdesc attributes when the image has content value</col>
+                </row>
+                <row>
+                    <col>&lt;INPUT&gt;</col>
+                    <col>Input fields within forms</col>
+                    <col>Vital. (I prefer to use &lt;button&gt; for buttons and submit buttons though)</col>
+                </row>
+                <row>
+                    <col>&lt;LI&gt;</col>
+                    <col>List item</col>
+                    <col>Specifies an item in an unordered or ordered list (&lt;ul&gt; or &lt;ol&gt;)</col>
+                </row>
+                <row>
+                    <col>&lt;OL&gt;</col>
+                    <col>Ordered list</col>
+                    <col>Type of list where the order of elements has some meaning. Generally rendered with item numbers (best managed with CSS).</col>
+                </row>
+                <row>
+                    <col>&lt;OPTION&gt;</col>
+                    <col>Selection list option</col>
+                    <col>Vital for options within a drop-down control.</col>
+                </row>
+                <row>
+                    <col>&lt;P&gt;</col>
+                    <col>Paragraph</col>
+                    <col>Only use to denote a paragraph of text. Never use for spacing alone.</col>
+                </row>
+                <row>
+                    <col>&lt;SCRIPT&gt;</col>
+                    <col>Inline script (e.g. JavaScript)</col>
+                    <col>It's better to have all scripts as separate files than to write inline or in the &lt;head&gt; section, however still has its uses.</col>
+                </row>
+                <row>
+                    <col>&lt;SELECT&gt;</col>
+                    <col>Selection list</col>
+                    <col>A drop-down selector for a form.</col>
+                </row>
+                <row>
+                    <col>&lt;STYLE&gt;</col>
+                    <col>CSS style settings</col>
+                    <col>Normally used in section of a page. Try to use external stylesheets, to enable you to apply different styles for different output media.</col>
+                </row>
+                <row>
+                    <col>&lt;TABLE&gt;</col>
+                    <col>Table</col>
+                    <col>Use for repeated data that has a naturally tabular form. Never use for layout purposes.</col>
+                </row>
+                <row>
+                    <col>&lt;TD&gt;</col>
+                    <col>Table data cell</col>
+                    <col>A cell containing actual data. If a cell actually contains a descriptor or identifier for a row or column, use a &lt;th&gt; (table header) tag, not a &lt;td&gt;. This usually applies to column headers (within a &lt;thead&gt;), column footers (within a &lt;tfoot&gt;), as well as row headers (usually the first cell in a row in the &lt;tbody&gt;).</col>
+                </row>
+                <row>
+                    <col>&lt;TEXTAREA&gt;</col>
+                    <col>Multi-line text input area in a form</col>
+                    <col>Essential</col>
+                </row>
+                <row>
+                    <col>&lt;TH&gt;</col>
+                    <col>Table column or row header cell</col>
+                    <col>May appear in a &lt;thead&gt; (to denote a column header cell), &lt;tbody&gt; (to denote a row header), and in &lt;tfoot&gt; (to denote a column foot cell, e.g. a total)</col>
+                </row>
+                <row>
+                    <col>&lt;TITLE&gt;</col>
+                    <col>Document title</col>
+                    <col>Essential</col>
+                </row>
+                <row>
+                    <col>&lt;UL&gt;</col>
+                    <col>Unordered list</col>
+                    <col>Essential. Use for lists where the order or items has no particular importance.</col>
+                </row>
+            </table>
+            <link src="https://webdesignfromscratch.com/html-css/html-tags/">Read the entire list here!</link>
+            <subheading>HTML 5 Input Types</subheading>
+            <desc>Input Types Boilerplate</desc>
+            <code>
+                &lt;form&gt; 
+                 &lt;input type="insertTypeHere"...other parameters&gt; &lt;br&gt;
+                 &lt;input type="insertTypeHere"...other parameters&gt; &lt;br&gt;
+                 &lt;input type="insertTypeHere"...other parameters&gt; &lt;br&gt;
+                &lt;/form&gt;            
+            </code>
+            <desc>
+                Below is a summary of useful Input Types for a Form. 
+                Note that a form is used to collect data from a user. 
+                Input Types allows the Web Site to collect specific types 
+                of data from users in a user-friendly manner! Please
+                search online for comprehensive list of input types!
+            </desc>
+            <table>
+                <row>
+                    <col>Tag</col>
+                    <col>When to use it.</col>                  
+                </row>
+                <row>                  
+                    <col>"text"</col>
+                    <col>When you want some general non-personal data from user.</col>
+                </row>
+                <row>                  
+                    <col>"password"</col>
+                    <col>When you need to have user credential to provide some secure service.</col>
+                </row>
+                <row>                  
+                    <col>"submit"</col>
+                    <col>When are there many input parameters, so being able to reset is convenient.</col>
+                </row>
+                <row>                  
+                    <col>"radio"</col>
+                    <col>When you want an exclusive choice out of many possible choices from user.</col>
+                </row>
+                <row>                  
+                    <col>"checkbox"</col>
+                    <col>When user can mutually choose many of the possible numerous choices.</col>
+                </row>
+            </table>            
+        </module>
+        <module week="3" title="CSS: The Basics">
+            <heading>CSS - The Basics</heading>
+            <line></line>
+            <subheading>What is CSS?</subheading>
+            <bulletPoints>
+                <point>CSS is acronym for Cascading Style Sheets</point>
+                <point>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</point>
+                <point>CSS saves a lot of work. It can control the layout of multiple web pages all at once</point>
+                <point>External stylesheets are stored in CSS files</point>
+                <point>Inline CSS can be done in HTML as well.</point>
+            </bulletPoints>
+            <subheading>CSS Syntax</subheading>
+            <desc>A CSS rule-set consists of a selector and a declaration block:</desc>
+            <image src="CSS_syntax.jpg"></image>
+            <desc>The selector points to the HTML element you want to style.
+            The declaration block contains one or more declarations separated by semicolons.
+            Each declaration includes a CSS property name and a value, separated by a colon.
+            A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.
+            </desc>
+            
+            <desc>There are countless CSS properties to work with. But to select the appropriate HTML elements to change
+            Select using the appropriate selector.</desc>
+            <bulletPoints>
+                <point>You can generically select all elements of a certain HTML type (such as h2 or p tag)</point>
+                <point>You can select a specific class using '.' (like .myClass{...})</point>
+                <point>You can select a specific id using '#' (like #myUniqueId{...})</point>
+            </bulletPoints>            
+            <desc>The basic fundamental CSS needed are the following:</desc>
+            <bulletPoints>
+                <point>Color - Used to change element's color</point>
+                <point>Width/Height - Change element's width or height</point>
+                <point>Margins/Padding - Change outside or inside spacings</point>
+                <point>Alignment - Align center, left, right, top, or bottom.</point>
+                <point>Border - Include border with different styles.</point>
+                <point>Display - inline, inline-block, block, list-item</point>
+            </bulletPoints>                      
+            
+            <desc>In general, for whatever styling you need google or stackoverflow for
+                  specific styles or techniques needed to acquire the desired styling.
+            </desc>
+        </module>
+        <module week="4" title="CSS: Advanced Stuff">
+            <heading>CSS - Advanced Stuff</heading>
+            <line></line>
+            <subheading>What are more advanced features of CSS?</subheading>
+            <desc>There are tons of advanced features in CSS3.
+            For instance being able to use vendor specific browser features.
+            As well, you can even make your websites dynamic through use of CSS
+            to change style based on Hover, Click, or various DOM actions through CSS.
+            </desc>
+
+            <link src="https://tutorialzine.com/2013/10/12-awesome-css3-features-you-can-finally-use">Awesome Demos of Advanced CSS </link>
+            <desc> Please consider the following Advanced CSS.
+            Please do your own research to find out more possibilities of CSS!
+            </desc>
+            <bulletPoints>
+                <point>Rounded Corners - Use to given element borders round corners</point>
+                <point>Linear Gradients - Linear Image Transition Effect</point>
+                <point>WebKit - Change outside or inside spacings</point>
+                <point>Radial Gradients - Circularly Transitioning Effect</point>
+                <point>Animation - Allows you to create various animation effects</point>
+                <point>Transition/Transform - Transition (like moving), and Transform (like rotating)</point>
+                <point>Skew - Skewing makes elements slant</point>
+                <point>Column gap/count - Allows you to create multicolumn layouts</point>
+            </bulletPoints>                    
+        </module>
+        <module week="5" title="JavaScript: The Fundamentals">
+            <heading>JavaScript - The Basics</heading>
+            <line></line>
+            <subheading>How to include Javascript (.js) file in HTML?</subheading>
+            <desc> To include Javascript code into your HTML files, you need to link it as shown below.
+            Remember, it is usually better to link your .js file at the end of your HTML file so that all
+            the elements in that webpage loads before your .js file attempts to get access to those elements.            
+            </desc>
+            <code>
+                &lt;body&gt;
+                  //Include the link to JavaScript Codes at the end!!
+                  &lt;script src="theJavascriptCode.js"&gt;&lt;/script&gt;
+                &lt;/body&gt;            
+            </code>
+            <line></line>
+            <image src="Basics.PNG"></image>
+            <desc>Here the basics of JavaScript is shown. Make sure to include your JavaScript code 
+            in your HTML so that it can work! DOM is used to get access to elements on Webpage and 
+            allow you to modify them accordingly. You can debug using various outputs available in JS. 
+            Most common way to debug in real-time is to use the console.log() to log your results into 
+            the browser! Remember to comment lots on your code to help you document your code!
+            </desc>            
+            <line></line>
+            <image src="DataType.PNG"></image>
+            <desc>Here, a list of different data type initialization is shown. Remember, in JS, you convert
+            your vars into data type by initialization using the appropriate value. You can also use objects
+            to help store all info of objects you create to help you condense important vars into one location (the object).       
+            </desc>            
+            <line></line>
+            <image src="Loops.PNG"></image>There are many ways to do loops in JS, just pick the right one for
+            the specific problem you are solving!
+            <desc>       
+            </desc>            
+            <line></line>
+            <image src="Arrays.PNG"></image>
+            <desc>Instead of using objects (although objects can store arrays), you can use Arrays to store 
+            similar data into one variable. All you classic Data Structure functions like pop, push etc. 
+            are available for your use!       
+            </desc>            
+            <line></line>
+            <image src="Vars1.PNG"></image>
+            <image src="Vars2.PNG"></image>
+            <desc>More in-depth look into variables shown. If you initialize a variable without a value, 
+            it is called undefined. Once you initialize it, it can take on numerous data types. "use strict" 
+            mode enforces the programmer to not be able to use any undeclared variables. Again, many of the 
+            common arithmetic/programming operations are usable in JavaScript.       
+            </desc>            
+            <line></line>
+            <image src="IfElse.PNG"></image>
+            <desc>The essential and fundamental conditional statements shown. Two flavours: if-else and switch statement.       
+            </desc>            
+            <line></line>
+            <image src="Strings.PNG"></image>
+            <desc>Strings and its common operations.       
+            </desc>            
+            <line></line>
+            <image src="Math.PNG"></image>
+            <desc>Math and its common operations.       
+            </desc>            
+            <line></line>
+            <image src="Events.PNG"></image>
+            <desc>Events are an interactive way to add functionalities to your Websites. When certain events
+            (like a click on a button, or hovering over a certain div tag etc.) occurs, you can add event 
+            functions to do certain actions. This is the correct way of handling events, as opposed to 
+            including inline JavaScript code in your HTML, or using numerous If-Else Statements to detect
+            these events. Use events to make your Websites epic!       
+            </desc>            
+            <line></line>
+            <image src="Errors.PNG"></image>
+            <desc>Every system can have errors. To handle JavaScript Errors (any programming errors),
+            you can "catch" these errors. You can "try" the actions that you want to do, and if errors occur,
+            catch those errors and proceed as needed. You can also validate inputs from client-side, 
+            but you can also use smart HTML input forms to take care of most of the input validation.       
+            </desc>            
+            <line></line>
+            <image src="Date.PNG"></image>
+            <desc>If your web application needs to manage time, dates, and calendar related data,
+            use the Dates functionality to obtain the data you need. Time reference made relative to 1970.       
+            </desc>            
+            <line></line>
+            <image src="GlobalFunction.PNG"></image>
+            <desc>"Find out the difference between global and local variables. Global variables are declared 
+            outside any function, and they can be accessed (used) on any function in the program. Local 
+            variables are declared inside a function, and can be used only inside that function. It is 
+            possible to have local variables with the same name in different functions. 
+            Even the name is the same, they are not the same. It's like two people with the same name. 
+            Even the name is the same, the persons are not. The scope of a variable refers to where
+            is a variable visible or accessible. If a person asks what is the scope of a variable, 
+            she's asking whether it is local or global."       
+            </desc>            
+            <line></line>
+            <image src="JSON.PNG"></image>
+            <desc>JSON: JavaScript Object Notation. JSON is a syntax for storing and exchanging data.
+            JSON is text, written with JavaScript object notation. Data transfer between a browser
+            and a server must be done through texts. Hence we use JSON to simplify the data transfer
+            since JSON is a text, and JSON format is JavaScript friendly, so no complicated parsing or translation is required.       
+            </desc>            
+            <line></line>
+            <image src="RegularExpressions.PNG"></image>
+            <desc>Various regex shown to help you search for certain expressions/patterns within an expression.
+            Useful for applications where searching for something specific.       
+            </desc>            
+
+        </module>    
+        <module week="6" title="AJAX and XML">
+            <heading>AJAX and XML</heading>
+            <line></line>
+            <subheading>How to include Javascript (.js) file in HTML?</subheading>        
+            <desc>"XML plays an important role in many different IT systems. 
+            XML is often used for distributing data over the Internet. 
+            It is important (for all types of software developers!) to have a good understanding of XML."</desc>        
+            <desc>Below is an example XML code:</desc>        
+            <code>
+                &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+                &lt;note&gt;
+                  &lt;to&gt;Tyquan&lt;/to&gt;
+                  &lt;from&gt;Shaniqua&lt;/from&gt;
+                  &lt;heading&gt;Reminder&lt;/heading&gt;
+                  &lt;body&gt;Don't forget me this weekend!&lt;/body&gt;
+                &lt;/note&gt;
+            </code>        
+            <document src="XML_cheatsheet.pdf"></document>
+            
+            <line></line>
+            <subheading>What is Ajax?</subheading>
+            <desc>A way to refresh portions of the webpage without reloading the entire web page.
+            Web 2.0 is possible thanks to Ajax! You can: Update a web page without reloading the entire page.
+            Request or receive data from a server, even after the page has loaded. You can even send data 
+            to the server in the background, even while your page is busy running code.
+            </desc>
+            <document src="ajax_cheatsheet.pdf"></document>
+            
+            <desc>
+            Learn about the difference between Get and Post request below. This is important when
+            working as a web developer since you will be making requests to server, and knowing 
+            whether to use Get or Post requests to the server can make a difference.
+            </desc>
+            <link src="https://www.diffen.com/difference/GET-vs-POST-HTTP-Requests">GET vs. POST</link>
+        </module>    
+        <module week="7" title="Databases for the Web">
+            <heading>Databases for the Web</heading>
+            <line></line>
+            <subheading>Databases and MySql</subheading>         
+            
+            <desc>Where does all the big companies store their data used to power their websites, desktop apps and 
+            mobile apps? Inside their big server warehouses/data centers!
+            But how do they store those data, in what form? They store it in their server computers in the form of 
+            databases system called DBMS (Database Management System). Databases has 4 broad categories.
+            They are Hierarchical, Network, Relational, and Object Oriented. Readers are encouraged to read
+            more about it. There are countless query languages for various database architectures. 
+            However, as in IT professional, knowing what tool to use for the job is very important. Knowing which database
+            type is very important to getting the job done. With experience, figuring the right database architecture will
+            become second nature.
+            In this lecture, an overview of Database and MYSql will be discussed.            
+            </desc>
+            
+            <document src="mySQL_cheatsheet.pdf"></document>
+            <desc>Remember, the point of a query language is to sort, filter, and collect the data's you need from
+            the database. If you can do as much work from the SQL side, less work on the Server Programming will be required.
+            When you query, try your best to make be specific as possible to help eliminate redundancies. Redundancy in data
+            is one of the great sins of DBMS. Take advantage of all the MySQL functionalities (or its equivalents) shown above!
+            </desc>
+            
+        </module>
+        <module week="8" title="Fundamentals of PHP">
+            <heading>Fundamentals of PHP</heading>
+            <line></line>
+            <subheading>PHP: Hypertext Preprocessor</subheading>
+            
+            <desc>PHP stands for Personal Home Page. As the name implies, it's
+            a server side scripting language to manage your websites (or your home web page).
+            In a .php file, you can insert HTML code as well as your embedded PHP code/files.
+            A .php file can also be a standalone file stored in the computer server to 
+            handle specific requests from a .php website with HTML markup. Which can be
+            GET or POST requests. Based on those two requests, you can return appropriate
+            results using the standard programming procedures shown below. You may access
+            an appropriate database to query the results. Or you can even manage file
+            reads and writes, find current time, upload files, manage cookies/sessions,
+            send emails, and more. Server-side scripting is generally more powerful than
+            client-side scripting.
+            </desc>
+            <desc>Below is a list of core PHP functionalities:</desc>
+            <link src="php_cheatsheet.pdf"></link>
+        </module>
+    </modules>
+    
+    <references>
+        <!-- Here include extra references for students to explore -->
+        <!-- If just refers to a PDF file, it's in the server! -->
+        <reference src="https://webfoundation.org/about/vision/history-of-the-web/" week="1" title="The Web">Please Review History of WWW</reference>
+        <reference src="https://www.w3schools.com/html/" week="2" title="HTML">Please Research more on HTML</reference>
+        <reference src="https://www.w3schools.com/css/" week="3" title="CSS: The Basics">Basics of CSS</reference>
+        <reference src="https://www.w3schools.com/css/css3_borders.asp" week="4" title="CSS: Advanced Stuff">Advanced CSS</reference>
+        <reference src="https://www.w3schools.com/js/" week="5" title="Javascript">Explore more on JavaScript</reference>
+        <reference src="https://www.w3schools.com/xml/ajax_intro.asp" week="6" title="AJAX and XML">Ajax Reference</reference>
+        <reference src="https://www.w3schools.com/xml/" week="6" title="AJAX and XML">XML Reference</reference>
+        <reference src="https://www.tutorialspoint.com/mysql/" week="7" title="Databases for the Web">MySQL tutorial</reference>
+        <reference src="mySQL_cheatsheet.pdf" week="7" title="Databases for the Web">MySQL CheatSheet</reference>
+        <reference src="https://www.w3schools.com/php/" week="8" title="Fundamentals of PHP">Explore More PHP here!</reference>
+        <reference src="php_cheatsheet.pdf" week="8" title="Fundamentals of PHP">PHP CheatSheet</reference>
+    </references>
+    
+    <assignments>
+        <assignment src="Assignment1_Comp466.pdf" due="2018-10-06" week="1,2,3,4">Assignment#1-HTML and CSS</assignment>
+        <assignment src="Assignment2_Comp466.pdf" due="2018-10-31" week="5,6">Assignment#2-JavaScript and AJAX</assignment>
+        <assignment src="Assignment3_Comp466.pdf" due="2018-12-03" week="7,8">Assignment#3-PHP and MySQL</assignment>
+    </assignments>
+    
+    <quizzes>
+        <quiz week="1,2,3,4" title="HTML and CSS Quiz">
+			<question text="What does HTML stand for?">
+                <choiceA>High Transmisson Mail Letter</choiceA>
+                <choiceB>High Transmission Message Line</choiceB>
+                <choiceC>Hypertext Markup Language</choiceC>
+                <choiceD>Hypertext Message Link</choiceD>
+                <answer>choiceC</answer>
+			</question>        
+			<question text="Who invented the World Wide Web?">
+                <choiceA>Bjarne Stroustrup</choiceA>
+                <choiceB>Dennis Ritchie</choiceB>
+                <choiceC>Donald Knuth</choiceC>
+                <choiceD>Sir Tim Berners-Lee</choiceD>
+                <answer>choiceD</answer>
+			</question>        
+			<question text="Which HTML Tag is correct?">
+                <choiceA>&lt;Image&gt;</choiceA>
+                <choiceB>&lt;img&gt;</choiceB>
+                <choiceC>&lt;h7&gt;</choiceC>
+                <choiceD>&lt;text&gt;</choiceD>
+                <answer>choiceB</answer>
+			</question>        
+			<question text="What is the correct HTML element for the largest heading?">
+                <choiceA>&lt;heading&gt;</choiceA>
+                <choiceB>&lt;h6&gt;</choiceB>
+                <choiceC>&lt;h1&gt;</choiceC>
+                <choiceD>&lt;head&gt;</choiceD>
+                <answer>choiceC</answer>
+			</question>        
+			<question text="What is the correct HTML element for inserting a line break?">
+                <choiceA>&lt;lb&gt;</choiceA>
+                <choiceB>&lt;br&gt;</choiceB>
+                <choiceC>&lt;break&gt;</choiceC>
+                <choiceD>&lt;\n&gt;</choiceD>
+                <answer>choiceB</answer>
+			</question>        
+			<question text="How to add HTML for adding a background color?">
+                <choiceA>&lt;body style="background-color:yellow;"&gt;</choiceA>
+                <choiceB>&lt;background&gt;yellow&lt;/background&gt;</choiceB>
+                <choiceC>&lt;body bg="yellow"&gt;</choiceC>
+                <choiceD>&lt;backgroundColor bg="yellow"&gt;</choiceD>
+                <answer>choiceA</answer>
+			</question>        
+			<question text="What is the correct HTML element to define important text?">
+                <choiceA>&lt;i&gt;</choiceA>
+                <choiceB>&lt;strong&gt;</choiceB>
+                <choiceC>&lt;b&gt;</choiceC>
+                <choiceD>&lt;important&gt;</choiceD>
+                <answer>choiceC</answer>
+			</question>        
+			<question text="How to comment in HTML?">
+                <choiceA>&lt;!-- my comment --&gt;</choiceA>
+                <choiceB>//my comment</choiceB>
+                <choiceC>*****my comment</choiceC>
+                <choiceD>/*my comment */</choiceD>
+                <answer>choiceA</answer>
+			</question>        
+			<question text="How to define title of HTML document?">
+                <choiceA>&lt;head&gt;</choiceA>
+                <choiceB>&lt;title&gt;</choiceB>
+                <choiceC>&lt;meta&gt;</choiceC>
+                <choiceD>&lt;id&gt;</choiceD>
+                <answer>choiceB</answer>
+			</question>        
+			<question text="Which HTML attribute specifies an alternate text for an undisplayable image?">
+                <choiceA>&lt;title&gt;</choiceA>
+                <choiceB>&lt;longdesc&gt;</choiceB>
+                <choiceC>&lt;alt&gt;</choiceC>
+                <choiceD>&lt;src&gt;</choiceD>
+                <answer>choiceC</answer>
+			</question>        
+			<question text="Which doctype is correct for HTML5?">
+                <choiceA>&lt;!DOCTYPE html&gt;</choiceA>
+                <choiceB>&lt;!DOCTYPE HTML5&gt;</choiceB>
+                <choiceC>&lt;DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 5.0//EN" "http://www.w3.org/TR/html5/strict.dtd"&gt;</choiceC>
+                <choiceD>&lt;!DOCTYPE HTML5 PUBLIC&gt;</choiceD>
+                <answer>choiceA</answer>
+			</question>        
+			<question text="How to insert a footer?">
+                <choiceA>&lt;bottom&gt;</choiceA>
+                <choiceB>&lt;footer&gt;</choiceB>
+                <choiceC>&lt;section&gt;</choiceC>
+                <choiceD>&lt;foot&gt;</choiceD>
+                <answer>choiceB</answer>
+			</question>        
+			<question text="What does CSS do?">
+                <choiceA>Cascades the styles found in HTML. </choiceA>
+                <choiceB>Computes the Sums of Style.</choiceB>
+                <choiceC>Styles inline elements in HTML.</choiceC>
+                <choiceD>Styles HTML webpage elements.</choiceD>
+                <answer>choiceD</answer>
+			</question>            
+        </quiz>        
+        <quiz week="5,6" title="JavaScript and Ajax Quiz">
+			<question text="How to write to the browser console?">
+                <choiceA>output.write() </choiceA>
+                <choiceB>console.log()</choiceB>
+                <choiceC>console.alert()</choiceC>
+                <choiceD>output.alert()</choiceD>
+                <answer>choiceB</answer>
+			</question>			
+            <question text="How many unique ways to do loops in JavaScript?">
+                <choiceA>1 </choiceA>
+                <choiceB>2</choiceB>
+                <choiceC>3</choiceC>
+                <choiceD>4</choiceD> <!-- forloop whileloop dowhileloop recursion -->
+                <answer>choiceD</answer>
+			</question>
+            
+            <question text="What is the correct JavaScript syntax to change the content of the HTML element: &lt;p id='demo'&gt;This is a demonstration.&lt;/p&gt;">
+                <choiceA>document.getElement("p").innerHTML = "Hello World!";</choiceA>
+                <choiceB>document.getElementById("demo").innerHTML = "Hello World!";</choiceB>
+                <choiceC>#demo.innerHTML = "Hello World!";</choiceC>
+                <choiceD>document.getElementByName("p").innerHTML = "Hello World!";</choiceD>
+                <answer>choiceB</answer>
+			</question>
+            
+            <question text="Which Array operation is not valid?">
+                <choiceA>array.pop()</choiceA>
+                <choiceB>array.sort()</choiceB>
+                <choiceC>array.empty()</choiceC>
+                <choiceD>array.fill()</choiceD>
+                <answer>choiceC</answer>
+			</question>
+            
+            <question text="What are events in JavaScript?">
+                <choiceA>When your JavaScript runs code.</choiceA>
+                <choiceB>When a user clicks a button.</choiceB>
+                <choiceC>When JavaScript executes code after the browser or a user does something.</choiceC>
+                <choiceD>Software version of an interrupt.</choiceD>
+                <answer>choiceC</answer>
+			</question>
+            <question text="Difference between global and local variable/functions?">
+                <choiceA>Local is only usable within a function, global can be used anywhere.</choiceA>
+                <choiceB>Not much, both variables can do same amount of work.</choiceB>
+                <choiceC>Local can only be declared within a function but can be used anywhere.</choiceC>
+                <choiceD>Global is more accessible compared to local.</choiceD>
+                <answer>choiceA</answer>
+			</question>
+            <question text="What are JSON and XML?">
+                <choiceA>They are latest technology in Web 2.0.</choiceA>
+                <choiceB>New encoding and encryption scheme for exchanging data.</choiceB>
+                <choiceC>JSON is compatible with JavaScript, XML is not.</choiceC>
+                <choiceD>A way to efficiently exchange data.</choiceD>
+                <answer>choiceD</answer>
+			</question>
+            <question text="What does Ajax stand for?">
+                <choiceA>Applied JavaScript Application Extension</choiceA>
+                <choiceB>Asynchronous JavaScript And XML.</choiceB>
+                <choiceC>It is a city in Ontario, Canada.</choiceC>
+                <choiceD>Aserial Javascript and XML.</choiceD>
+                <answer>choiceB</answer>
+			</question>
+            <question text="What is Ajax?">
+                <choiceA>A new programming language to replace JavaScript.</choiceA>
+                <choiceB>Asynchronous data storage to server.</choiceB>
+                <choiceC>Styles inline elements in HTML.</choiceC>
+                <choiceD>Use of Javascript and XML/JSON to dynamically change webpages without reloading the entire webpage.</choiceD>
+                <answer>choiceD</answer>
+			</question>
+            <question text="What object is used to transfer/communicate data in Ajax?">
+                <choiceA>XMLHttpRequest object.</choiceA>
+                <choiceB>AjaxHttpsRequest object.</choiceB>
+                <choiceC>AsyncHTTPRequest object.</choiceC>
+                <choiceD>HttpRequest object.</choiceD>
+                <answer>choiceA</answer>
+			</question>
+            <question text="Which XMLHttpRequest state indicates request is finished and response ready?">
+                <choiceA>0</choiceA>
+                <choiceB>1</choiceB>
+                <choiceC>4</choiceC>
+                <choiceD>5</choiceD>
+                <answer>choiceC</answer>
+			</question>
+            <question text="Which XMLHttpRequest status indicates 'ok' request?">
+                <choiceA>200</choiceA>
+                <choiceB>403</choiceB>
+                <choiceC>404</choiceC>
+                <choiceD>500</choiceD>
+                <answer>choiceA</answer>
+			</question>
+            <question text="How to extract XML values with Ajax?">
+                <choiceA>getElementsByClassName()...</choiceA>
+                <choiceB>getElementsByTagName()...</choiceB>
+                <choiceC>getElementsById()...</choiceC>
+                <choiceD>getElementsByName()...</choiceD>
+                <answer>choiceB</answer>
+			</question>
+            <question text="What is XML?">
+                <choiceA>XML is a File Transfer System.</choiceA>
+                <choiceB>XML is an old mark-up language replaced by HTML5.</choiceB>
+                <choiceC>XML is an HTML replacement.</choiceC>
+                <choiceD>XML is a software- and hardware-independent tool for storing and transporting data.</choiceD>
+                <answer>choiceD</answer>
+			</question>
+            <question text="What seems out of place?">
+                <choiceA>XML Display.</choiceA>
+                <choiceB>XML XPath.</choiceB>
+                <choiceC>XML Dom.</choiceC>
+                <choiceD>XML Type.</choiceD>
+                <answer>choiceD</answer>
+			</question>
+            <question text="What is the correct syntax of the declaration which defines the XML version?">
+                <choiceA>&lt;?xml version="1.0" /&gt;</choiceA>
+                <choiceB>&lt;?xml version="1.0"?&gt;</choiceB>
+                <choiceC>&lt;xml version="1.0" /&gt;</choiceC>
+                <choiceD>&lt;xml version="1.0" &gt;</choiceD>
+                <answer>choiceB</answer>
+			</question>
+            <question text="In Ajax, a Get or Post request to a server is made, the difference is?">
+                <choiceA>Post is an improved, faster version of Get. Get is easier to code.</choiceA>
+                <choiceB>Get gets resources, Post sends resources to server.</choiceB>
+                <choiceC>They can both do the same job.</choiceC>
+                <choiceD>GET is simpler and faster, but POST is more robust.</choiceD>
+                <answer>choiceD</answer>
+			</question>
+            
+        </quiz>        
+        <quiz week="7,8" title="MySQL and PHP Quiz">
+			<question text="SQL stands for">
+                <choiceA>Sensitive Query language</choiceA>
+                <choiceB>Sequence Question language</choiceB>
+                <choiceC>Structured Query Language</choiceC>
+                <choiceD>Sequence Query language</choiceD>
+                <answer>choiceC</answer>
+			</question>			
+            <question text="How to remove an entry from table in SQL?">
+                <choiceA>Remove</choiceA>
+                <choiceB>Erase</choiceB>
+                <choiceC>Drop</choiceC>
+                <choiceD>Delete</choiceD>
+                <answer>choiceD</answer>
+			</question>
+            
+            <question text="What is primary key?">
+                <choiceA>It uniquely identifies each record in a table</choiceA>
+                <choiceB>The unique ID for each table</choiceB>
+                <choiceC>The first unique entry in a table</choiceC>
+                <choiceD>Table with primary key is the main table</choiceD>
+                <answer>choiceA</answer>
+			</question>
+            
+            <question text="What is foreign key?">
+                <choiceA>If the field of a table is not used by other tables</choiceA>
+                <choiceB>A table contains foreign key if many different fields</choiceB>
+                <choiceC>It is used to link two table together by a common field</choiceC>
+                <choiceD>Newly added fields in a table</choiceD>
+                <answer>choiceC</answer>
+			</question>
+            
+            <question text="What does PHP stand for?">
+                <choiceA>Personal Home Page</choiceA>
+                <choiceB>PHP: Hypertext Preprocessor</choiceB>
+                <choiceC>Private Home Page</choiceC>
+                <choiceD>Personal Hypertext Processor</choiceD>
+                <answer>choiceB</answer>
+			</question>
+            <question text="PHP server scripts are surrounded by delimiters, which?">
+                <choiceA>&lt;?php&gt;...&lt;/?&gt;</choiceA>
+                <choiceB>&lt;%gt;...&lt;/%%gt;</choiceB>
+                <choiceC>&lt;script&gt;...&lt;/script&gt;</choiceC>
+                <choiceD>&lt;?php...?&gt;</choiceD>
+                <answer>choiceA</answer>
+			</question>
+            <question text="How do you write 'Hello World' in PHP">
+                <choiceA>Document.Write("Hello World");</choiceA>
+                <choiceB>echo "Hello World";</choiceB>
+                <choiceC>"Hello World";</choiceC>
+                <choiceD>console.log("Hello World")</choiceD>
+                <answer>choiceB</answer>
+			</question>
+            <question text="All variables in PHP start with which symbol?">
+                <choiceA>!</choiceA>
+                <choiceB>$</choiceB>
+                <choiceC>#</choiceC>
+                <choiceD>%</choiceD>
+                <answer>choiceB</answer>
+			</question>
+            <question text="What is the correct way to end a PHP statement?">
+                <choiceA>&lt;/php&gt;</choiceA>
+                <choiceB>New line</choiceB>
+                <choiceC>.</choiceC>
+                <choiceD>;</choiceD>
+                <answer>choiceD</answer>
+			</question>
+            <question text="The PHP syntax is most similar to:">
+                <choiceA>Perl and C</choiceA>
+                <choiceB>VBScript</choiceB>
+                <choiceC>JavaScript</choiceC>
+                <choiceD>Python</choiceD>
+                <answer>choiceA</answer>
+			</question>
+            <question text="How do you get information from a form that is submitted using the 'get' method?">
+                <choiceA>Request.Form;</choiceA>
+                <choiceB>Request.QueryString;</choiceB>
+                <choiceC>$_GET[];</choiceC>
+                <choiceD>None of the above</choiceD>
+                <answer>choiceC</answer>
+			</question>
+            <question text="What is the correct way to open the file 'time.txt' as readable?">
+                <choiceA>open("time.txt","read");</choiceA>
+                <choiceB>fopen("time.txt","r");</choiceB>
+                <choiceC>fopen("time.txt","r+");</choiceC>
+                <choiceD>open("time.txt");</choiceD>
+                <answer>choiceB</answer>
+			</question>
+            <question text="Which superglobal variable holds information about headers, paths, and script locations?">
+                <choiceA>$_SESSION</choiceA>
+                <choiceB>$_GLOBALS</choiceB>
+                <choiceC>$_GET</choiceC>
+                <choiceD>$_SERVER</choiceD>
+                <answer>choiceD</answer>
+			</question>
+            <question text="What is the correct way to add 1 to the $count variable?">
+                <choiceA>++count</choiceA>
+                <choiceB>count++;</choiceB>
+                <choiceC>$count =+1</choiceC>
+                <choiceD>$count++;</choiceD>
+                <answer>choiceD</answer>
+			</question>
+            <question text="What is a correct way to add a comment in PHP?">
+                <choiceA>/*...*/</choiceA>
+                <choiceB>&lt;comment&gt;...&lt;/comment&gt;</choiceB>
+                <choiceC>*\...\*</choiceC>
+                <choiceD>&lt;!--...--&gt;</choiceD>
+                <answer>choiceA</answer>
+			</question>
+            <question text="Which one of these variables has an illegal name?">
+                <choiceA>$my-Var</choiceA>
+                <choiceB>$my_Var</choiceB>
+                <choiceC>$myVar</choiceC>
+                <choiceD>None of the above</choiceD>
+                <answer>choiceA</answer>
+			</question>
+            <question text="How do you create a cookie in PHP?">
+                <choiceA>createcookie()</choiceA>
+                <choiceB>setcookie()</choiceB>
+                <choiceC>makecookie()</choiceC>
+                <choiceD>initcookie()</choiceD>
+                <answer>choiceB</answer>
+			</question>
+
+
+        </quiz>
+    </quizzes>
+</course>

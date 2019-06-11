@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title id="page-title">part3.htm</title>
+    <link rel="stylesheet" href="../shared/main.css">
+  </head>
+  <body>
+  
+  <h1>Comp 466 - Assignment#1 Part 3</h1>
+    <!-- Navbar -->
+    <div class="topnav">
+      <a href='../tma1.htm'>Home</a>
+      <a href='../part1/part1.xml'>Part 1</a>
+      <a href='../part2/part2.htm'>Part 2</a>
+      <a class="active">Part 3</a>
+      <a href='../part4/part4.htm'>Part 4</a>
+      <a href="../shared/doc.htm">Full Documentation</a>
+    </div>
+    
+    <!-- <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_ajax_display_table">How to display xml data in html</a> -->
+
+    <br>
+    <!-- <img src="images/cat1.jpg"></img> -->
+    <h2 style="margin-left: 50px">Slideshow Application using HTML5 Canvas</h2>
+    <div id='part3Slideshow'>
+        <canvas id="part3Canvas" width="640" height="480"></canvas>
+        <br><br>
+        <select id="selectTransition">
+          <option selected="selected" value="transition0">No Animation</option>
+          <option value="transition1">Transition #1</option>
+          <option value="transition2">Transition #2</option>
+          <option value="transition3">Transition #3</option>
+        </select>        
+        <a id="prevButton">Prev</a>
+        <a id="startStopButton">||</a>
+        <a id="nextButton">Next</a>
+        <a id="shuffleShow">Sequential</a>
+        <br>
+        <p id="currentIndexValue" style="margin-left:150px"><p>
+    </div>    
+    
+    
+    
+    </div>
+    <footer>
+        <hr id="footerLine" style="margin-top:40px"></hr>
+        Copyright &copy; 2018 Moshiur Howlader. All rights reserved. <br/>
+    </footer>
+    <script src="part3.js"></script>
+  </body>
+</html>

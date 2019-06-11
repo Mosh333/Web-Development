@@ -1,0 +1,6 @@
+select * from educordCourseContent;
+select * from educordAnnouncements;
+select * from educordModules;
+select * from educordReferences;
+select * from educordAssignments;
+select * from educordQuizQuestions;

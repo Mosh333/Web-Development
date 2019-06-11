@@ -1,0 +1,71 @@
+﻿
+
+html, body {
+    min-height: 700px !important;
+}
+
+.currentIndexValue {
+    display: inline;
+}
+#slideshow_title{
+    margin-top: 70px;
+    margin-left: 100px;
+}
+
+.slideshowImage {
+    margin-left: 150px;
+    border: 1px solid #000000;
+    width: 640px;
+    height: 480px;
+}
+
+#currentIndexValue{
+    margin-left: 180px;
+}
+
+#prevButton{
+    margin-left: 90px;
+}
+
+#slideshowMode{
+    margin-left: 70px;
+}
+
+#slideshowCaption {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    background: black;
+    color: white;
+    font-family: Calibri;
+    font-size: 25pt;
+    margin-top: 440px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-left: -324px; /*Measured the original offset to be 4px*/
+    transform: translateX(-50%); /*this translates half of the caption width over
+                                    to the otherside*/
+}
+#startStopButton {
+    font-size: 125% !important;
+    width: 43.25px;
+    height: 38px;
+}
+
+.myButton {
+    background-color: #77b55a;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #4b8f29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 6px 12px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #5b8a3c;
+}
+

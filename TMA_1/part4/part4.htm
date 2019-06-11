@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title id="page-title">part4.htm</title>
+    <link rel="stylesheet" href="../shared/main.css">
+  </head>
+  <body>
+  
+  <h1>Comp 466 - Assignment#1 Part 4</h1>
+    <!-- Navbar -->
+    <div class="topnav">
+      <a href='../tma1.htm'>Home</a>
+      <a href='../part1/part1.xml'>Part 1</a>
+      <a href='../part2/part2.htm'>Part 2</a>
+      <a href='../part3/part3.htm'>Part 3</a>
+      <a class="active">Part 4</a>
+      <a href='../shared/doc.htm'>Full Documentation</a>
+    </div>
+    
+    <!-- <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_ajax_display_table">How to display xml data in html</a> -->
+    <h2 style="margin-left:50px">App Collection</h2>
+    <br>
+    <div class="Part4Container">
+        <div id="myHeader" class="tab">
+          <button class="tablinks tablinks1" onclick="openAppTab(event, 'Tab1')">Measurement <br /> Calculator</button>
+          <button class="tablinks tablinks2" onclick="openAppTab(event, 'Tab2')">Mortgage <br /> Calculator</button>
+          <button class="tablinks tablinks3" onclick="openAppTab(event, 'Tab3')">Youtubeonrepeat <br /> File Generator</button>
+        </div>
+
+        <div id="Tab1" class="tabcontent tab1" style="margin-top:80px">
+            <p>Please select physical quantity to convert:</p>
+            <select id="measurementType">
+                <option value="weight">Weight</option>
+                <option value="length">Length</option>
+                <option value="area">Area</option>
+                <option value="volume">Volume</option>
+            </select>
+            <br>
+            <input type="number" id="measurementInput1" value="1" min="0"></input>
+            <select id="measurementSelect1"></select>
+            <div style="font-size:50px; margin-left:100px">=</div>
+            <input type="number" id="measurementInput2" value="1000" min="0"></input>
+            <select id="measurementSelect2"></select>
+        </div>
+        <div id="Tab2" class="tabcontent tab2" style="margin-top:80px; border:none">
+            <div id="Tab2_sub1">
+                <p>Figure out mortgage </p>
+                <label>Principal ($)
+                    <input type="number" id="principal" value="10000" min="0" step=".01"></input>
+                </label>
+                <p>Interest Rate (%)
+                    <input type="number" id="interest" value="0.5" min="0" step=".01"></input>
+                <p>
+                <p>Amortization (years)
+                    <input type="number" id="duration" value="5" min="0" step=".01"></input>
+                <p>
+                <p>Payment Frequency 
+                    <select id="payFreq" value=month">
+                        <option value="month">Monthly</option>
+                        <option value="week">Weekly</option>
+                        <option value="biweek">Bi-Weekly</option>
+                    </select>
+                <p>
+            </div>
+            <div>
+                <h3>Result:</h3>
+                <p id="periodicPay">Periodic Pay is: 168.79</p>
+                <p id="totalInterest">Total Contract Interest Fee: 127.60</p>
+            </div>
+        </div>
+
+        <div id="Tab3" class="tabcontent tab3" style="margin-top:80px; border:none">
+<!--             Sometimes, www.youtubeonrepeat.com may be updating and some features on the websites may not work
+                as I have experienced many times. Usually I am contempt with existing playlists that I have, but wish I could make 
+                a new playlist when the site's search engine is down and entering a youtube ID link on the webside
+                does not allow me to get the video to add to my playlist. Hence, I created this tool
+                to allow me to create a new playlist when the website's search feature, and add feature is not working. 
+                Note to make this tool more robust, I could add feature to extract the playlist data from user's 
+                .youtubeonrepeat file and allow them to interactively change their playlist freely. However, I
+                am opting to just create/add a new playlist for the sake of time. One benefit to my app is
+                allows you to add the same video multiple times to the same playlist.<br/> -->
+                <div id="Tab3_part1">
+                    <p>                
+                    Add a new playlist to your youtubeonrepeat file for when www.youtubeonrepeat.com is not fully working.
+                    IE When video is not searchable while site is updating. After you are done, hit "Create", and paste the JSON data into the same file you used.</p>
+                    <!--https://developer.mozilla.org/en-US/docs/Web/API/FileReader
+                    https://www.javascripture.com/FileReader -->
+                    <a id="sampleYtFile" target="_blank" href="test.youtubeonrepeat">Sample Youtubeonrepeat File</a>
+                    <input type='file' accept='.youtubeonrepeat' onchange='openFile(event)'><br>
+                    <img id='output'>
+
+                    <br>
+                    <button id="newInputButton">Add new video via DOM</button>
+                    <p id="newPlaylistInfo">New Playlist Name (Please enter new name)
+                        <input id="newPlaylistName"></input>
+                    </p>          
+                </div>
+                <div id="Tab3_part2">
+                    <button id="createButton">Create File</button>   
+                    <p>Please copy and paste this JSON data containing the newly updated Youtubeonrepeat file contents.
+                        And save as ".youtubeonrepeat" file. Then proceed to upload or "restore" new account setup on www.youtubeonrepeat.com </p>
+                    <textarea id="textarea_JSON" style="width:575px; height:100px"></textarea>
+                </div>
+
+        </div>
+            <div class="spaceFiller>
+            <!--   Insert the UI to manage the 2 main
+            functionalities using HTML DOM! -->
+            <p class="spaceFiller"></p>
+            </div>
+        </div>
+   
+    
+    
+    
+    </div>
+    <div style="position:relative">
+        <img class="ytFileGenTut1" src="ytRepeat_tutorial1.png"></img>
+        <img class="ytFileGenTut2" src="ytRepeat_tutorial2.png"></img>
+    </div>
+    <footer>
+        <hr id="footerLine"></hr>
+        Copyright &copy; 2018 Moshiur Howlader. All rights reserved. <br/>
+    </footer>
+    <script src="part4.js"></script>
+  </body>
+</html>

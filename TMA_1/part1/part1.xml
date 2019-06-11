@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="part1.xsl"?>
+<resume
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="part1.xsd"
+>
+<Name> 
+    Moshiur Howlader
+</Name>
+<Highlights>
+    <description_1>
+        •	Final Year McMaster Computer Engineering Student. 
+   </description_1>
+   <description_2>
+        •	Proficient with both Software and Hardware.
+   </description_2>
+   <description_3>
+        •	Experience with various programming languages.
+   </description_3>
+   <description_4>
+        •	Strong Foundations in Computer Science/Engineering. Core competency in Electrical Engineering.
+   </description_4>
+   <description_5>
+        •	Looking to become a Software or Computer Engineer in a reputable tech company after graduation.
+   </description_5>
+</Highlights>
+
+<Education>
+    <degree> 
+        <degree_info1>•	Bachelor of Engineering in Computer Engineering w/ Co-Op (B. Eng)</degree_info1>
+        <degree_info2>Class of 2019 McMaster University, Hamilton, ON (expected)</degree_info2>
+    </degree>
+</Education>
+
+<Skills>
+    <skills1>•	Python, HTML, CSS, JavaScript, Matlab/Simulink, Assembly, Linux, Unix, SQL, Wireshark, Version Control (GIT), (System)Verilog/VDHL, C, and Java</skills1>
+    <skills2>•	Computer Architecture, Networks, Digital System Design, Microprocessor, Embedded System, Hardware-Software interfacing, Image Processing, OS, and Software Development</skills2>
+</Skills>
+
+<Work_Experience>
+    <job1>
+        <title>Application Analyst – CIBC, Toronto, ON - [Sept 2016 – April 2017]</title>
+        <responsibility1>•	Assisted CIBC Developers to develop, maintain, document, and assist in trouble shooting various financial application systems (Siebel - internal client database management software)</responsibility1>
+        <responsibility2>•	Manage Incident, Change Management tickets, and other miscellaneous tasks (Unix, SQL)</responsibility2>
+    </job1>
+</Work_Experience>
+
+</resume>

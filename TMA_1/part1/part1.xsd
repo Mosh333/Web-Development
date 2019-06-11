@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="resume">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Name" type="xs:string" />
+        <xs:element name="Highlights">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="description_1" type="xs:string" />
+              <xs:element name="description_2" type="xs:string" />
+              <xs:element name="description_3" type="xs:string" />
+              <xs:element name="description_4" type="xs:string" />
+              <xs:element name="description_5" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Education">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="degree">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="degree_info1" type="xs:string" />
+                    <xs:element name="degree_info2" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Skills">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="skills1" type="xs:string" />
+              <xs:element name="skills2" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Work_Experience">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="job1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="title" type="xs:string" />
+                    <xs:element name="responsibility1" type="xs:string" />
+                    <xs:element name="responsibility2" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

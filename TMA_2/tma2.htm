@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title id="page-title">tma2.htm</title>
+    <link rel="stylesheet" href="shared/tma2.css">
+  </head>
+  <body>
+  
+    <!-- Navbar -->
+    <div class="topnav">
+      <a class="active home">Home</a>
+      <a class="part1" href='./part1/part1.php'>Part 1</a>
+      <a class="part2" href='./part2/part2.php'>Part 2</a>
+      <a class="doc" href='./shared/doc.htm'>Full Documentation</a>
+    </div>
+    
+    <div class="homepageInfo">
+        <h3>Assignment #2 Cover Page</h3>
+        <p>Comp 466 - Computer Science 466: Advanced <br> Technologies for Web-Based Systems</p>
+        <p>Moshiur Howlader - ID Num 3393617</p>
+        <p>Start Date: November 16, 2018</p>
+        <p>Completetion Date: January 12, 2019</p>
+        <p>Total Hours Spent: 120 Hours</p>
+    </div>
+    <div class="assignmentDetail">
+        <h1>Documentation</h1>
+        <h2>Assignment #2: <a href="assignment_2.pdf" target="_blank">PDF</a></h2>
+        <hr></hr>
+        <h3>Part 1 - BookIt - The Online Bookmarker</h3>
+        <img id="bookmarkHome" src="shared/bookmark.png"></img>
+        <p class="doNotCenter"> &emsp; Part 1 asks for an implementation of an online bookmarking service,
+            which allows user to save their favourite links online. Before log in,
+            the app should show up to top 10 most popular links based on the database.
+        </p>
+        <p class="doNotCenter">This app should allow user to register, login, and logout. While logged in,
+            the system should allow user to add, edit, and delete any website links.
+            Through Javascript, the URL link input by user must be validated.
+        </p>
+        <p class="doNotCenter">
+            There are two MySQL tables used to implement this app:
+            <ul class="doNotCenter">
+                <li class="doNotCenter">UserList: username (Primary Key), passwd</li>
+                <li class="doNotCenter">Bookmark: LinkID (Primary Key), urlLink, user (foreign key to username in UserList)</li>
+            </ul>
+        </p>
+        <p class="doNotCenter">
+            Technologies used are HTML, CSS, Javascript, and PHP.
+        </p>
+        <hr></hr>
+        <h3>Part 2 - Educord - The Online Learning Management System</h3>
+        <img id="learningHome" src="shared/learning.png"></img>
+        <p class="doNotCenter"> &emsp; Part 2 asks for an implementation of an online learning system,
+            which allows instructors to deliver their courses online to students. Before log in,
+            the app should show all educord online courses uploaded into the database.
+        </p>
+        <p class="doNotCenter">This app should allow user to register, login, and logout. While logged in,
+            the system should allow instructors to add, edit, and delete any course materials.
+            Students can view the course, do quizzes, upload assignments, and look at references,
+            as well as enroll or withdraw from courses.
+        </p>
+        <p class="doNotCenter">
+            There are several MySQL tables used to implement this app:
+            <ul class="doNotCenter">
+                <li class="doNotCenter">educordUserList</li>
+                <li class="doNotCenter">educordAnnouncements</li>
+                <li class="doNotCenter">educordModules</li>
+                <li class="doNotCenter">educordReferences</li>
+                <li class="doNotCenter">educordAssignments</li>
+                <li class="doNotCenter">educordQuizQuestions</li>
+                <li class="doNotCenter">educordCourseContent</li>
+                <li class="doNotCenter">educordEnrolledStudents</li>
+                <li class="doNotCenter">educordAssignmentSubmissions</li>
+                <li class="doNotCenter">educordQuizGrades</li>
+            </ul>
+        </p>
+        <p class="doNotCenter">
+            Technologies used are HTML, CSS, Javascript, and PHP.
+        </p>
+        <p></p>
+    </div>
+    
+    <footer>
+        Copyright &copy; 2018 Moshiur Howlader. All rights reserved. <br/>
+    </footer>
+    <script src="tma2.js"></script>
+  </body>
+</html>

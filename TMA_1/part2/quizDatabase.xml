@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quizDatabase>
+  <unit quizName="unit1">
+      <question>What does HTML stand for?</question>
+      <choiceA>High Transmisson Mail Letter</choiceA>
+      <choiceB>High Transmission Message Line</choiceB>
+      <choiceC>Hypertext Markup Language</choiceC>
+      <choiceD>Hypertext Message Link</choiceD>
+      <answer>choiceC</answer>
+  </unit>
+  <unit quizName="unit1">
+      <question>Who invented the World Wide Web?</question>
+      <choiceA>Bjarne Stroustrup</choiceA>
+      <choiceB>Dennis Ritchie</choiceB>
+      <choiceC>Donald Knuth</choiceC>
+      <choiceD>Sir Tim Berners-Lee</choiceD>
+      <answer>choiceD</answer>
+  </unit>
+  <unit quizName="unit1">
+      <question>Which HTML Tag is correct?</question>
+      <choiceA>&lt;Image&gt;</choiceA>
+      <choiceB>&lt;img&gt;</choiceB>
+      <choiceC>&lt;h7&gt;</choiceC>
+      <choiceD>&lt;text&gt;</choiceD>
+      <answer>choiceB</answer>
+  </unit>
+  <unit quizName="unit1">
+      <question>What is the correct HTML element for the largest heading?</question>
+      <choiceA>&lt;heading&gt;</choiceA>
+      <choiceB>&lt;h6&gt;</choiceB>
+      <choiceC>&lt;h1&gt;</choiceC>
+      <choiceD>&lt;head&gt;</choiceD>
+      <answer>choiceC</answer>
+  </unit>
+  <unit quizName="unit1">
+      <question>What is the correct HTML element for inserting a line break?</question>
+      <choiceA>&lt;lb&gt;</choiceA>
+      <choiceB>&lt;br&gt;</choiceB>
+      <choiceC>&lt;break&gt;</choiceC>
+      <choiceD>&lt;\n&gt;</choiceD>
+      <answer>choiceB</answer>
+  </unit>
+  <unit quizName="unit1">
+      <question>How to add HTML for adding a background color?</question>
+      <choiceA>&lt;body style="background-color:yellow;"&gt;</choiceA>
+      <choiceB>&lt;background&gt;yellow&lt;/background&gt;</choiceB>
+      <choiceC>&lt;body bg="yellow"&gt;</choiceC>
+      <choiceD>&lt;backgroundColor bg="yellow"&gt;</choiceD>
+      <answer>choiceA</answer>
+  </unit>
+  <unit quizName="unit1">
+      <question>What is the correct HTML element to define important text?</question>
+      <choiceA>&lt;i&gt;</choiceA>
+      <choiceB>&lt;strong&gt;</choiceB>
+      <choiceC>&lt;b&gt;</choiceC>
+      <choiceD>&lt;important&gt;</choiceD>
+      <answer>choiceC</answer>
+  </unit>
+  <unit quizName="unit1">
+      <question>How to comment in HTML?</question>
+      <choiceA>&lt;!-- my comment --&gt;</choiceA>
+      <choiceB>//my comment</choiceB>
+      <choiceC>*****my comment</choiceC>
+      <choiceD>/*my comment */</choiceD>
+      <answer>choiceA</answer>
+  </unit>
+  <unit quizName="unit1">
+      <question>How to define title of HTML document?</question>
+      <choiceA>&lt;head&gt;</choiceA>
+      <choiceB>&lt;title&gt;</choiceB>
+      <choiceC>&lt;meta&gt;</choiceC>
+      <choiceD>&lt;id&gt;</choiceD>
+      <answer>choiceB</answer>
+  </unit>
+  <unit quizName="unit1">
+      <question>Which HTML attribute specifies an alternate text for an undisplayable image?</question>
+      <choiceA>&lt;title&gt;</choiceA>
+      <choiceB>&lt;longdesc&gt;</choiceB>
+      <choiceC>&lt;alt&gt;</choiceC>
+      <choiceD>&lt;src&gt;</choiceD>
+      <answer>choiceC</answer>
+  </unit>
+  <unit quizName="unit1">
+      <question>Which doctype is correct for HTML5?</question>
+      <choiceA>&lt;!DOCTYPE html&gt;</choiceA>
+      <choiceB>&lt;!DOCTYPE HTML5&gt;</choiceB>
+      <choiceC>&lt;DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 5.0//EN" "http://www.w3.org/TR/html5/strict.dtd"&gt;</choiceC>
+      <choiceD>&lt;!DOCTYPE HTML5 PUBLIC&gt;</choiceD>
+      <answer>choiceA</answer>
+  </unit>
+  <unit quizName="unit1">
+      <question>How to insert a footer?</question>
+      <choiceA>&lt;bottom&gt;</choiceA>
+      <choiceB>&lt;footer&gt;</choiceB>
+      <choiceC>&lt;section&gt;</choiceC>
+      <choiceD>&lt;foot&gt;</choiceD>
+      <answer>choiceB</answer>
+  </unit>
+  <unit quizName="unit1">
+      <question>What does CSS do?</question>
+      <choiceA>Cascades the styles found in HTML. </choiceA>
+      <choiceB>Computes the Sums of Style.</choiceB>
+      <choiceC>Styles inline elements in HTML.</choiceC>
+      <choiceD>Styles HTML webpage elements.</choiceD>
+      <answer>choiceD</answer>
+  </unit>
+  <unit quizName="unit2">
+      <question>How to write to the browser console?</question>
+      <choiceA>output.write() </choiceA>
+      <choiceB>console.log()</choiceB>
+      <choiceC>console.alert()</choiceC>
+      <choiceD>output.alert()</choiceD>
+      <answer>choiceB</answer>
+  </unit>
+  <unit quizName="unit2">
+      <question>How many unique ways to do loops in JavaScript?</question>
+      <choiceA>1 </choiceA>
+      <choiceB>2</choiceB>
+      <choiceC>3</choiceC>
+      <choiceD>4</choiceD> <!-- forloop whileloop dowhileloop recursion -->
+      <answer>choiceD</answer>
+  </unit>
+  <unit quizName="unit2">
+      <question>What is the correct JavaScript syntax to change the content of the HTML element: &lt;p id="demo"&gt;This is a demonstration.&lt;/p&gt;</question>
+      <choiceA>document.getElement("p").innerHTML = "Hello World!";</choiceA>
+      <choiceB>document.getElementById("demo").innerHTML = "Hello World!";</choiceB>
+      <choiceC>#demo.innerHTML = "Hello World!";</choiceC>
+      <choiceD>document.getElementByName("p").innerHTML = "Hello World!";</choiceD>
+      <answer>choiceB</answer>
+  </unit>
+  <unit quizName="unit2">
+      <question>Which Array operation is not valid?</question>
+      <choiceA>array.pop()</choiceA>
+      <choiceB>array.sort()</choiceB>
+      <choiceC>array.empty()</choiceC>
+      <choiceD>array.fill()</choiceD>
+      <answer>choiceC</answer>
+  </unit>
+  <unit quizName="unit2">
+      <question>What are events in JavaScript?</question>
+      <choiceA>When your JavaScript runs code.</choiceA>
+      <choiceB>When a user clicks a button.</choiceB>
+      <choiceC>When JavaScript executes code after the browser or a user does something.</choiceC>
+      <choiceD>Software version of an interrupt.</choiceD>
+      <answer>choiceC</answer>
+  </unit>
+  <unit quizName="unit2">
+      <question>Difference between global and local variable/functions?</question>
+      <choiceA>Local is only usable within a function, global can be used anywhere.</choiceA>
+      <choiceB>Not much, both variables can do same amount of work.</choiceB>
+      <choiceC>Local can only be declared within a function but can be used anywhere.</choiceC>
+      <choiceD>Global is more accessible compared to local.</choiceD>
+      <answer>choiceA</answer>
+  </unit>
+  <unit quizName="unit2">
+      <question>What are JSON and XML?</question>
+      <choiceA>They are latest technology in Web 2.0.</choiceA>
+      <choiceB>New encoding and encryption scheme for exchanging data.</choiceB>
+      <choiceC>JSON is compatiable with JavaScript, XML is not.</choiceC>
+      <choiceD>A way to efficiently exchange data.</choiceD>
+      <answer>choiceD</answer>
+  </unit>
+  <unit quizName="unit2">
+      <question>What does JSON stand for?</question>
+      <choiceA>JavaScript System On Network </choiceA>
+      <choiceB>JavaScript Object Notation</choiceB>
+      <choiceC>JavaScript Smart Online NetTransfer</choiceC>
+      <choiceD>JavaScript Oriented Notation</choiceD>
+      <answer>choiceB</answer>
+  </unit>
+  <unit quizName="unit2">
+      <question>How do you write "Hello World" in an alert box?</question>
+      <choiceA>alertBox("Hello World");</choiceA>
+      <choiceB>msg("Hello World");</choiceB>
+      <choiceC>msgBox("Hello World");</choiceC>
+      <choiceD>alert("Hello World");</choiceD>
+      <answer>choiceD</answer>
+  </unit>
+  <unit quizName="unit2">
+      <question>What is a regex (regular expression)?</question>
+      <choiceA>A machine-learning algorithm to find patterns.</choiceA>
+      <choiceB>An expression to validate inputs.</choiceB>
+      <choiceC>An expressional algorithm to search text files.</choiceC>
+      <choiceD>A sequence of characters that define a search pattern.</choiceD>
+      <answer>choiceD</answer>
+  </unit>
+  <unit quizName="unit2">
+      <question>It is possible to code for Server-Side with JavaScript?</question>
+      <choiceA>False, JavaScript is a Client-Side programming language.</choiceA>
+      <choiceB>False, JavaScript is not secure enough for Server-Side since weakly-typed language.</choiceB>
+      <choiceC>True, although might not be secure since weakly-typed language.</choiceC>
+      <choiceD>True, there are frameworks like Node.js that exists to allow Server-Side Scripting with JS.</choiceD>
+      <answer>choiceD</answer>
+  </unit>
+  <unit quizName="unit2">
+      <question>What is JavaScript?</question>
+      <choiceA>A new programming language borrowed from Java.</choiceA>
+      <choiceB>Computes the Sums of Style.</choiceB>
+      <choiceC>Styles inline elements in HTML.</choiceC>
+      <choiceD>Styles HTML webpage elements.</choiceD>
+      <answer>choiceB</answer>
+  </unit>
+  <unit quizName="unit2">
+      <question>Input Validation is only possible with JavaScript?</question>
+      <choiceA>True, since it is a Client-Side language.</choiceA>
+      <choiceB>True, since JavaScript is one of the three core Web technologies.</choiceB>
+      <choiceC>False, since JavaScript and HTML5 input forms can validate inputs.</choiceC>
+      <choiceD>False, since JavaScript, HTML5 input forms, and Server-Side language can validate inputs.</choiceD>
+      <answer>choiceD</answer>
+  </unit>
+  <unit quizName="unit3">
+      <question>What does Ajax stand for?</question>
+      <choiceA>Applied JavaScript Application Extension</choiceA>
+      <choiceB>Asynchronous JavaScript And XML.</choiceB>
+      <choiceC>It is a city in Ontario, Canada.</choiceC>
+      <choiceD>Aserial Javascript and XML.</choiceD>
+      <answer>choiceB</answer>
+  </unit>
+  <unit quizName="unit3">
+      <question>What is Ajax?</question>
+      <choiceA>A new programming language to replace JavaScript.</choiceA>
+      <choiceB>Asynchronous data storage to server.</choiceB>
+      <choiceC>Styles inline elements in HTML.</choiceC>
+      <choiceD>Use of Javascript and XML/JSON to dynamically change webpages
+                without reloading the entire webpage.</choiceD>
+      <answer>choiceD</answer>
+  </unit>
+  <unit quizName="unit3">
+      <question>What object is used to transfer/communicate data in Ajax?</question>
+      <choiceA>XMLHttpRequest object.</choiceA>
+      <choiceB>AjaxHttpsRequest object.</choiceB>
+      <choiceC>AsyncHTTPRequest object.</choiceC>
+      <choiceD>HttpRequest object.</choiceD>
+      <answer>choiceA</answer>
+  </unit>
+  <unit quizName="unit3">
+      <question>Which XMLHttpRequest state indicates request is finished and response ready?</question>
+      <choiceA>0</choiceA>
+      <choiceB>1</choiceB>
+      <choiceC>4</choiceC>
+      <choiceD>5</choiceD>
+      <answer>choiceC</answer>
+  </unit>
+  <unit quizName="unit3">
+      <question>Which XMLHttpRequest status indicates "ok" request?</question>
+      <choiceA>200</choiceA>
+      <choiceB>403</choiceB>
+      <choiceC>404</choiceC>
+      <choiceD>500</choiceD>
+      <answer>choiceA</answer>
+  </unit>
+  <unit quizName="unit3">
+      <question>What is XML?</question>
+      <choiceA>XML is a File Transfer System.</choiceA>
+      <choiceB>XML is an old mark-up language replaced by HTML5.</choiceB>
+      <choiceC>XML is an HTML replacement.</choiceC>
+      <choiceD>XML is a software- and hardware-independent tool for storing and transporting data.</choiceD>
+      <answer>choiceD</answer>
+  </unit>
+  <unit quizName="unit3">
+      <question>What is XSLT?</question>
+      <choiceA>Compact Computer Fourier Transform.</choiceA>
+      <choiceB>Used to style HTML files.</choiceB>
+      <choiceC>Used to style and display XML files.</choiceC>
+      <choiceD>Old technology replaced by CSS.</choiceD>
+      <answer>choiceC</answer>
+  </unit>
+  <unit quizName="unit3">
+      <question>What is an XML Schema?</question>
+      <choiceA>Describes the structure of an XML document.</choiceA>
+      <choiceB>Describes XML database.</choiceB>
+      <choiceC>Describes how to store XML into a database.</choiceC>
+      <choiceD>Describes the patterns within an XML document.</choiceD>
+      <answer>choiceA</answer>
+  </unit>
+  <unit quizName="unit3">
+      <question>XML documents should be ________?</question>
+      <choiceA>Correct.</choiceA>
+      <choiceB>Valid.</choiceB>
+      <choiceC>Well-formed.</choiceC>
+      <choiceD>Defined.</choiceD>
+      <answer>choiceC</answer>
+  </unit>
+  <unit quizName="unit3">
+      <question>What seems out of place?</question>
+      <choiceA>XML Display.</choiceA>
+      <choiceB>XML XPath.</choiceB>
+      <choiceC>XML Dom.</choiceC>
+      <choiceD>XML Type.</choiceD>
+      <answer>choiceD</answer>
+  </unit>
+  <unit quizName="unit3">
+      <question>What is the correct syntax of the declaration which defines the XML version?</question>
+      <choiceA>&lt;?xml version="1.0" /&gt;</choiceA>
+      <choiceB>&lt;?xml version="1.0"?&gt;</choiceB>
+      <choiceC>&lt;xml version="1.0" /&gt;</choiceC>
+      <choiceD>&lt;xml version="1.0" &gt;</choiceD>
+      <answer>choiceB</answer>
+  </unit>
+  <unit quizName="unit3">
+      <question>How to extract XML values with Ajax?</question>
+      <choiceA>getElementsByClassName()...</choiceA>
+      <choiceB>getElementsByTagName()...</choiceB>
+      <choiceC>getElementsById()...</choiceC>
+      <choiceD>getElementsByName()...</choiceD>
+      <answer>choiceB</answer>
+  </unit>
+  <unit quizName="unit3">
+      <question>In Ajax, a Get or Post request to a server is made, the difference is?</question>
+      <choiceA>Post is an improved, faster version of Get. Get is easier to code.</choiceA>
+      <choiceB>Get gets resources, Post sends resources to server.</choiceB>
+      <choiceC>They can both do the same job.</choiceC>
+      <choiceD>GET is simpler and faster, but POST is more robust.</choiceD>
+      <answer>choiceD</answer>
+  </unit>
+
+</quizDatabase>

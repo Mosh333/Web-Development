@@ -1,0 +1,49 @@
+on 
+
+editButton2 & editButton3
+
+store or remove the quizButton from:
+quizMenuContainer
+
+---------------------------------------
+editButton1, when Submit or OK is pressed (after changes),
+make sure to add dynamically (using closures),
+the quiz Events similar to what is done for Unit Quizzes 1 2 & 3
+
+---------------------------------------
+After test that everything works.
+If it works congrats :)
+Move on to the next part!!!!
+
+
+
+
+
+
+******************************************************
+To-do
+-Done
+
+
+
+Done
+-addEventListener for when grading the newly made quizzes
+    a)When we delete, the newer/newly added elements not deleted from question array hence questionArray increasing in size
+        fix: for loop i from 0 to max was bad
+             for loop i from max to 0 was good
+    b)To overcome issue of duplication of a certain quiz question sets of 7,
+      used DOM to manage and hide all inactive quizzes &/or use flags to prevent
+      multiple "identical" quizzes being produced
+-find an easy fix to the switching intermediate editing stage (when editing and looking to switch force them to save) (flags used)
+-Main issue maybe the change button event listener is not doing the correct bookkeeping
+    a)add functionality for "Add Question"; that is using DOM to add another form which includes the necessary bookkeeping
+    b)test, verify, and correct remove functionality (fails if 12 questions, but remove question 11)
+-GET DEFAULT SELECT VALUES INITIALIZED AFTER A NEW QUIZ HAS BEEN SUBMITTED (Done)
+-think of how to deal with placeholder management/saving of forms where a version has been saved
+-revisit the remove functionality especially after a new quiz has been made
+-deal with issue when switching between editing quizzes while not done editing -->doesn't work ALWAYS but good enough
+
+main.js:1791 Uncaught TypeError: Failed to execute 'removeChild' on 'Node': parameter 1 is not of type 'Node'.
+    at HTMLParagraphElement.<anonymous> (main.js:1791) ---> forgot index, and the clicking technique is not reliable esp. with timing issues
+    
+    removeChild() is almost guranteed to never miss timing

@@ -1,0 +1,742 @@
+
+.educordContainer{
+    position: absolute;
+    border: 5px solid #ff8566;
+    border-radius: 5px;
+    background-color: #ccccb3; /* #999966; */
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    left: 0;
+    right: 0;
+    margin-right: 100px;
+    /* margin-left: 400px; */
+    max-width: 1100px;
+    max-height: 950px;
+    height: 750px;
+    width: 900px;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: auto;
+    border-radius: 25px;
+}
+
+/* width */
+.educordContainer::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+.educordContainer::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.educordContainer::-webkit-scrollbar-thumb {
+  background: #e62e00;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.educordContainer::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+
+.educordOptions{
+    border: 5px solid #ff8566;
+    border-radius: 15px;
+    width: 250px;
+}
+
+.educordOptionsText{
+    /* all: initial;   /*Reset all styling esp. the inherited syles*/ */ */
+    font-size: 15px !important;
+    font: 0.5em "Open Sans", sans-serif;
+    background-color: #fafafa !important;
+    line-height: normal;
+    overflow:auto;
+    padding-left: 5px;
+/*     text-align: center;
+    line-height: normal; */
+}
+
+.optionDivider{
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+/*Before logging in, display lessons here*/
+.educordLessons{
+    border: 5px solid #ff8566;
+    background-color: #fafafa;
+    float: right;
+    margin-top: -450px;
+    margin-bottom: 25px;
+    width: 600px;
+    height: 700px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+/* GUI for once logged in */
+.educordGUI{
+    border: 5px solid #ff8566;
+    background-color: #fafafa;
+    float: center;
+    margin-top: 40px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    width: 800px;
+    height: 800px;
+    overflow-y: scroll;
+}
+
+#bookmarkHome:hover{
+	cursor:default !important;    
+}
+
+#educordLogo{
+    margin-left: 100px;
+    width: 250px;
+    height: 120px;
+}
+
+.welcomeEducord{
+    padding-top: 30px;
+    padding-right: 12px;
+    float: right;
+    color: #cc2900; /* #990033;*/
+    font-size: 170%;
+    font-weight: bold;
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                     0px -5px 35px rgba(255,255,255,0.3);    
+}
+
+.myButton{
+/* 	-moz-box-shadow: 0px 10px 14px -7px #3e7327;
+	-webkit-box-shadow: 0px 10px 14px -7px #3e7327;
+	box-shadow: 0px 10px 14px -7px #3e7327; */ /* can uncomment for shade */
+	background-color:#77b55a;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #4b8f29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5b8a3c;
+}
+
+.myButton:hover {
+	background-color: #6699ff;/* #72b352; */
+}
+/* .myButton:active {
+    background-color:#72b352;
+	position:relative;
+	top:1px;
+} */
+
+.loginButton {
+    margin-top: 25px;
+    margin-left: 45.5px; 
+    margin-right: 15px;
+    margin-bottom: 20px;
+    float: center;
+}
+
+.signupButton {
+    margin-top: 25px;   
+    float: center;
+}
+
+.logoutButton{
+    position: absolute;
+    font-size: 20px;
+    margin-top: 68px !important;
+    margin-left: 310px !important; /* 245.5px */
+}
+
+.greeting{
+    background-color:#77b55a;
+    border:1px solid #4b8f29;
+    color:#ffffff;
+    width: 170px;
+    font-size: 20px;
+    margin-left: 390px;
+    margin-top: -60px;
+    text-align: center;
+}
+
+/* educordGUI Styling */
+
+.selectedCourseHeader{
+    text-align: center;
+    color: #900000;
+    background: #997A6B; /*#996D6D;*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 0.4px;
+}
+
+.navbarInstructor{
+    margin-left: 0.4px;
+}           
+.navbarStudent{
+    margin-left: 0.4px;
+}           
+
+.educordTabStyleInstructor, .educordTabStyleStudent{   /*Add tab styling to each of the tabs below*/
+	-moz-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #007dc1), color-stop(1, #0061a7));
+	background:-moz-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background:-webkit-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background:-o-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background:-ms-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#007dc1', endColorstr='#0061a7',GradientType=0);
+	background-color:#007dc1;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #124d77;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #154682;
+}
+
+.educordTabStyleInstructor{
+	font-size:15px;
+}
+.educordTabStyleStudent{
+	font-size:15.4px;
+}
+
+.educordTabStyleInstructor:hover , .educordTabStyleStudent:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0061a7), color-stop(1, #007dc1));
+	background:-moz-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background:-webkit-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background:-o-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background:-ms-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0061a7', endColorstr='#007dc1',GradientType=0);
+	background-color:#0061a7;
+}
+.educordTabStyleInstructor:active , .educordTabStyleStudent:active {
+	position:relative;
+	top:-1px;
+}
+/* Instructor Options*/                 
+.announcementTab{
+    margin-right: 0px;
+}
+
+.referenceHeading, .announcementsHeading{
+    text-align: center;
+    margin-bottom: -10px;    
+}
+
+.announcementBox{
+    background: #dea495;
+    border: 5px solid #a83d23;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 70%;
+    padding-right: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    /* display: flex; */
+    /* justify-content: center; */    
+    /* margin: center; */
+}
+
+.referenceBox{
+    background: #668a5d;
+    border: 5px solid #a83d23;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 70%;
+    padding-right: 14px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.referenceLink{
+	background-color:#77b55a;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #4b8f29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5b8a3c;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.referenceTitle, .referenceWeek{
+    color: #fafafa;
+    margin-left: 5px;
+}
+
+.announcementDate{
+    text-align: center;
+}
+
+.announcementText{
+    width: 100%;
+    text-align: center;
+}
+
+.educordDoc{
+    height: 400px;
+    width: 500px;
+    margin-left: 20px;
+}
+
+.uploadEMLtab{
+    margin-right: 0px;
+}                            
+.classlistTab{
+    margin-right: 0px;
+}                            
+.submissionTab{
+    margin-right: 0px;
+}                            
+.quizTab{
+    margin-right: 0px;
+}                            
+.selectCourse{
+    margin-right: 0px;
+}
+
+/* Student Options */                 
+.announcementTab{
+    margin-right: 0px;
+}                            
+.lectureTab{
+    margin-right: 0px;
+    padding-left: 23.3px;
+    padding-right: 23.3px;    
+}                            
+.referenceTab{
+    margin-right: 0px;
+}                            
+.assignmentTab{
+    margin-right: 0px;
+}                            
+.selectCourse{
+    margin-right: 0px;
+}                            
+.selectCourse{
+    margin-right: 0px;
+    padding-right: 26px    
+}                            
+
+.educord_mainGUI{
+    margin-top: 0px;
+    padding: 0;
+    border: 1px solid black;
+    min-height: 700px; /*This two styling ensures */
+    overflow: hidden; /*height auto adjusts as needed*/
+}
+
+.educordModuleCode{
+    display: inline-block;
+    width: 200px;
+    border: 1px solid #000000;
+    border-radius: 18px;
+    background-color: white;
+    margin-left: 200px;
+    padding-left: 20px;
+    padding-right: 21px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.educordModuleBulletList{
+    border: 1px solid black;
+    background-color: white;
+    font-family: arial;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.educordModuleImage{
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.educordDoc2{
+    height: 500px !important;
+    width: 600px !important;
+    margin-left: 100px !important;
+}
+.selectModuleButton, .moduleLink, .selectQuizButton{
+	background-color:#77b55a;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #4b8f29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5b8a3c;
+}
+.selectModuleButton:hover {
+	background-color: #6699ff;/* #72b352; */
+}
+.selectModuleButton:active {
+    background-color:#72b352;
+	position:relative;
+	top:1px;
+}
+
+.moduleVideo{
+    width: 640px;
+    height: 480px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+}
+
+.moduleLink{
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+.educordModuleDescription, .myFileFormat{
+    border: 5px solid #1C6EA4;
+    border-radius: 17px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 17px;
+    margin-right: 17px;
+    background-color: #b2b4bd;
+    color: black;
+}
+
+.educordModuleTable{
+    margin-bottom: 15px;
+    width: 80% !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.educordModuleTable {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.educordModuleTable td, .educordModuleTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.educordModuleTable tr:nth-child(even){background-color: #f2f2f2;}
+
+.educordModuleTable tr:hover {background-color: #ddd;}
+
+.educordModuleTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+/*Format Quiz*/
+input[type='radio'] { transform: scale(2); }
+
+.choice_Input{
+    margin-left: 30px;
+}
+
+.choice{
+    margin-left: 55px;
+    margin-top: -20.5px;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    /* background-color: #7ed27e; */
+    font-family: arial;
+    color: black;
+}
+
+.questionContainer{
+    border: 5px solid #1C6EA4;
+    border-radius: 17px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 17px;
+    margin-right: 17px;
+    margin-bottom: 10px;
+    background-color: #b2b4bd;
+    color: black;
+}
+
+.questionText{
+    padding-top: 0px;
+}
+
+.submitQuiz, .goNextButton{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 340px;
+}
+
+/*When no courses selected*/
+.homepageText{
+	border-radius:3px;
+	border:1px solid #124d77;
+    margin-top: 30px;
+    padding-left: 10px;
+    margin-left: 190px;
+    width: 400px;
+    font-size: 20px;
+    font-family: arial;
+}
+
+/*When courses are available or selected*/
+.homepageText2{
+	border-radius:3px;
+	border:1px solid #124d77;
+    margin-top: 65px;
+    padding-left: 10px;
+    margin-left: 190px;
+    width: 400px;
+    font-size: 20px;
+    font-family: arial;
+}
+
+.courseList {
+    position: relative;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 147px;
+    width: 80%;
+}    .courseList select {
+        font-family: 'Arial';
+        display: inline-block;
+        width: 80%;
+        cursor: pointer;
+        padding: 7px 15px;
+        outline: 0;
+        border: 0px hidden #000000;
+        border-radius: 22px;
+        background: #e2c8c8;
+        color: #000000;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+        .courseList select::-ms-expand {
+            display: none;
+        }
+        .courseList select:hover,
+        .courseList select:focus {
+            color: #000000;
+            background: #e2c8c8;
+        }
+        .courseList select:disabled {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+.courseListArrow {
+    position: absolute;
+    top: 10.5px;
+    right: 136.5px;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 8px 5px 0px 5px;
+    border-color: #7b7b7b transparent transparent transparent;
+}
+
+.courseListArrowStudent {
+    top: 77.5px!important;
+}
+
+.courseList select:hover ~ .courseListArrow,
+.courseList select:focus ~ .courseListArrow {
+    border-top-color: #000000;
+    cursor: pointer;
+}
+.courseList select:disabled ~ .courseListArrow {
+    border-top-color: #cccccc;
+}
+
+/* Instructor Tab Stylings */
+
+/*Below for Upload EML tab*/
+.uploadInstructionHeader{
+    margin-left: 0px;
+    text-align: center;
+}
+
+.uploadInstructionText{
+    font-size: 16px;
+    font-family: arial;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.uploadInstructionImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.uploadPrompt{
+    margin-left: 10px;    
+}
+
+.fileUploadButton{
+    display: inline;
+    margin-left: 50px;    
+}
+
+.fileUploadButton2{
+    margin-left: 115px !important;    
+}
+
+.sendToServerButton, .assignmentDocLink{
+    margin-top: 0px;
+    margin-left: 85px;
+    margin-bottom: 0px;
+}
+
+.clearAllEMLPrompt{
+    margin-left: 10px;    
+}
+
+.deleteEMLButton{
+    background-color: red!important;
+    margin-top: 0px;
+    margin-left: 73px;
+    margin-bottom: 40px;
+}
+
+.deleteEMLButton2{
+    background-color: red!important;
+    margin-top: 15px;
+    margin-left: 73px;
+    margin-bottom: 10px;
+}
+
+.linkNum{
+    display:inline-block;
+    margin-bottom: -10px;
+    margin-top: -20px;
+    padding-bottom: -20px;
+/*     float:left;
+    width:10% */
+}
+
+.linkClass{
+    position absolute;
+    margin-left: 5px;
+    padding-bottom: -20px;
+    margin-top: -105px;
+    text-decoration: none;
+    color: #003399;
+}
+
+.linkClass:hover{
+    text-decoration: underline;
+}
+
+/* For Login Page */
+.Home, .Login, .Sign-up, .inputPrompt,
+.usernameInput, .passwordInput, .accountTypeInput{
+    position:absolute;
+}
+
+
+.Home{
+    margin-top: 100px;
+    margin-left: -100px;
+}
+
+.inputPrompt{
+    margin-top: 80px;
+    margin-left: 190px;
+}
+
+.Login{
+    margin-top: 220px;
+    margin-left: 250px;
+}
+.Sign-up{
+    margin-top: 220px;
+    margin-left: 250px;
+}
+.usernameInput{
+    margin-top: 140px;
+    margin-left: 200px;
+/*     width: 150px; */
+    height: 20px; */
+}
+.passwordInput{
+    margin-top: 170px;
+    margin-left: 200px;
+/*     width: 150px; */
+    height: 20px;
+}
+
+.accountTypeInput{
+    margin-top: 110px;
+    margin-left: 215px;
+/*     width: 150px; */
+    height: 20px; */
+}
+
+.editButton{
+    float: right;
+
+}
+
+.deleteButton{
+    float: right;
+}
+
+.addButton{
+    float: right;
+}
+                        
+                        
+                        
+                        

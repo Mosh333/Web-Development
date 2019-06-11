@@ -1,0 +1,85 @@
+﻿
+#navbarTitle {
+    margin-right: 40px;
+    float: right;
+    position: relative;
+    font-size: 28px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    color: white;
+}
+
+#cookieTrackerContainer {
+    border: 5px ridge #dfec92;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 600px;
+    height: 500px;
+    background-color: #bac1c1;
+}
+
+.description {
+    border: 5px thin red; 
+}
+#cookieTrackerLogo {
+    border: 5px solid #399648;
+    border-radius: 15px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: gainsboro;
+}
+
+#cookieImage {
+    width:75px;
+    height:75px;
+    margin-left: 10px;
+}
+
+#cookieTitle {
+    position: absolute;
+    margin-left: 10px;
+    display: inline;
+    font-family: Georgia, serif;
+    color: #A52A2A;
+    font-size: 25px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+
+.infoContainer {
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-right: 20px;
+    background-color: #eff2f2;
+    margin-left: 10px;
+    padding: 10px;
+    padding-top: 0px !important;
+}
+
+.myButton {
+    /* 	-moz-box-shadow: 0px 10px 14px -7px #3e7327;
+	-webkit-box-shadow: 0px 10px 14px -7px #3e7327;
+	box-shadow: 0px 10px 14px -7px #3e7327; */ /* can uncomment for shade */
+    background-color: #77b55a;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #4b8f29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 6px 12px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #5b8a3c;
+    margin-top: -5px;
+}
+
+.myButtonAlt{
+    margin-left:20px;
+}

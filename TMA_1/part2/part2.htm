@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title id="page-title">part2.htm</title>
+    <link rel="stylesheet" href="../shared/main.css">
+  </head>
+  <body>
+  
+  <h1>Comp 466 - Assignment#1 Part 2</h1>
+    <!-- Navbar -->
+    <div class="topnav">
+      <a href='../tma1.htm'>Home</a>
+      <a href='../part1/part1.xml'>Part 1</a>
+      <a class="active">Part 2</a>
+      <a href='../part3/part3.htm'>Part 3</a>
+      <a href='../part4/part4.htm'>Part 4</a>
+      <a href='../shared/doc.htm'>Full Documentation</a>
+    </div>
+    
+    <!-- <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_ajax_display_table">How to display xml data in html</a> -->
+
+    <br>
+    <div id=part2Instruction'>
+        <div class="accordionContainerPart2">
+            <button class="accordion accordionPart2">Instructions</button>
+            <div class="panel panelPart2" id="panel">
+              <h2>Hello There!</h2>
+              <p>
+                Below is the <mark class="brand">AvenueToQuiz</mark> Learning System. <br>
+                Use this for learning Fundamentals of Web Development. <br>
+                tl;dr HTML5, CSS Javascript, XML, and Ajax.<br>
+
+                <hr id="part2Divider1"></hr>
+                This Systems breaks down Web Development topic into three units.
+                <mark class="highlight1">Unit 1</mark> is for learning about <mark class="highlight1"> the Web, 
+                HTML5, and CSS.</mark> <mark class="highlight1">Unit 2</mark> is for learning
+                Client-Side Scripting in Javascript. Finally <mark class="highlight1">Unit 3</mark> 
+                is for learning <mark class="highlight1"> XML and Ajax</mark> to help enrich your Web Apps!                
+                <hr id="part2Divider2"></hr>  
+                At the end, you can test your knowledge of Web Development in an easy to
+                use Online Quiz System! You can also customize the Quiz questions to your
+                liking as well!          
+                
+                <hr id="part2Divider3"></hr>  
+                <button class="gotIt">Got it!</button>                 
+              </p> 
+            </div>
+            <br>
+        
+            </div>
+            <br>
+    </div>    
+    
+    
+    
+    <div class="AvenueToQuizBorder">
+    <img src="AvenueToQuiz.png" alt="AvenueToQuizLogo" id="AvenueToQuizLogo">
+    
+    <div class="AvenueToQuizContainer">
+        <div id="myHeader" class="tab">
+          <button class="tablinks tablinks1" onclick="openAppTab(event, 'Unit1')">Unit 1</button>
+          <button class="tablinks tablinks2" onclick="openAppTab(event, 'Unit2')">Unit 2</button>
+          <button class="tablinks tablinks3" onclick="openAppTab(event, 'Unit3')">Unit 3</button>
+          <button class="tablinks tablinks4" onclick="openAppTab(event, 'TryQuiz')">Try Quiz</button>
+          <button class="tablinks tablinks5" onclick="openAppTab(event, 'EditQuiz')">Edit Quiz</button>
+          <button class="fillertablinks" disabled>TestTestTestTest</button> <!-- Fill space up -->
+        </div>
+
+        <div id="Unit1" class="tabcontent unit1">
+          <br/>
+          <br/>
+          <!-- <hr class="tabcontentdivider"></hr> -->
+          <h2>Unit 1 - HTML5 and CSS</h2>
+          <hr></hr>
+          <!-- <p><embed id="loremIpsum" src="loremIpsum.htm"></embed></p> -->
+            <h3>History of the Internet/Web</h3>
+            <a class="tutorialLink" href="https://webfoundation.org/about/vision/history-of-the-web/" 
+            target="_blank">
+            Learn about the history of WWW here!</a>
+            <br><br>
+            <h3>HTML5</h3>
+            <p>Here is a boilerplate of how to create an html file.<br/>
+                Make sure to save the file as an .htm or .html file!<br/>
+                Enter your page title found in the tab of the browser in<br/>
+                &lt;title&gt;. If you want to link your CSS stylesheets,<br/>
+                include the file within the &lt;head&gt; tag. Finally,<br/>
+                enter your webpage contents (HTML elements) in the<br/>
+                &lt;body&gt; tag!</p>
+            <p style="margin-left:25px; margin-bottom:5px">HTML5 Boilerplate</p>
+            <div class="HTMLboiler">
+            <code>
+                &lt;!DOCTYPE html&gt; <br>
+                &lt;html&gt; <br>
+                  &emsp;&lt;head&gt; <br>
+                    &emsp;&emsp;&lt;meta charset="UTF-8"&gt; <br>
+                    &emsp;&emsp;&lt;title&gt;title&lt;/title&gt; <br>
+                  &emsp;&lt;/head&gt; <br>
+                  &emsp;&lt;body&gt; <br>
+                  
+                  &emsp;&lt;/body&gt; <br>
+                &lt;/html&gt; <br>
+            </code>
+            </div>
+            <br>
+            <caption>Table 1.1 - Summary of useful HTML5 tags</caption>
+            <table>
+              <tr>
+                <th>Tag</th>
+                <th>What it is.</th>
+                <th>When to use it.</th>
+              </tr>
+              <tr>
+                <td> &lt;A&gt; </td>
+                <td>Anchor (most commonly a link)</td>
+                <td>Vital. Use to create links in content. Use the title attribute 
+                whenever the contents of the &lt;a&gt;A&lt; &sol;a&gt; pair do not accurately describe
+                what you&apos;ll get from selecting the link. Title attribute often displays 
+                as a tooltip in visual browsers, which may be a helpful usability aid.</td>
+              </tr>
+              <tr>
+                <td> &lt;BODY&gt; </td>
+                <td>Document body</td>
+                <td>Essential (unless you&apos;re using frames)</td>
+              </tr>
+              <tr>
+                <td> &lt;BR&gt; </td>
+                <td>Line break</td>
+                <td>This is arguably display information. 
+                    Still in common use, but use with restraint.</td>
+              </tr>
+              <tr>
+                <td> &lt;BUTTON&gt; </td>
+                <td>Used for a standard clickable button within a form</td>
+                <td>Often better than &lt;input type=&quot;button&quot; &sol;&gt; or &lt;input type=&quot;submit&quot; &sol;&gt;, 
+                    as it allows you to assign different styles based on the HTML element alone, 
+                    whereas differentiating style based on the type of input is less well supported.</td>
+              </tr>
+              <tr>
+                <td> &lt;CAPTION&gt; </td>
+                <td>Caption for a table: describes the table&apos;s contents</td>
+                <td>The correct way to assign a title to a table</td>
+              </tr>
+              <tr>
+                <td> &lt;DIV&gt; </td>
+                <td>Division</td>
+                <td>Specifies a logical division within a document. 
+                    Use it to separate or identify chunks of content that are not otherwise distinguished naturally using other tags.
+                    One of the most common HTML tags.</td>
+              </tr>
+              <tr>
+                <td> &lt;EM&gt; </td>
+                <td>Emphasis</td>
+                <td>Commonly used in place of the old &lt;i&gt; (italics) tag to indicate emphasis (but less than &lt;strong&gt;)</td>
+              </tr>
+              <tr>
+                <td> &lt;FORM&gt; </td>
+                <td>Input form</td>
+                <td>Essential for data input</td>
+              </tr>
+              <tr>
+                <td> &lt;H#&gt; </td>
+                <td>Header</td>
+                <td>H1 largest header size. H6 smallest header size.</td>
+              </tr>
+              <tr>
+                <td> &lt;HEAD&gt; </td>
+                <td>Document head</td>
+                <td>Essential. Contains information about a page that does not constitute content to be communicated as part of the page.</td>
+              </tr>
+              <tr>
+                <td> &lt;HTML&gt; </td>
+                <td></td>
+                <td>Core element of every web page.</td>
+              </tr>
+              <tr>
+                <td> &lt;IMG&gt; </td>
+                <td>Show an image</td>
+                <td>Vital. Always use the alt or longdesc attributes when the image has content value</td>
+              </tr>
+              <tr>
+                <td> &lt;INPUT&gt; </td>
+                <td>Input fields within forms</td>
+                <td>Vital. (I prefer to use &lt;button&gt; for buttons and submit buttons though)</td>
+              </tr>
+              <tr>
+                <td> &lt;LI&gt; </td>
+                <td>List item</td>
+                <td>Specifies an item in an unordered or ordered list (&lt;ul&gt; or &lt;ol&gt;)</td>
+              </tr>
+              <tr>
+                <td> &lt;OL&gt; </td>
+                <td>Ordered list</td>
+                <td>Type of list where the order of elements has some meaning. Generally rendered with item numbers (best managed with CSS).</td>
+              </tr>
+              <tr>
+                <td> &lt;OPTION&gt; </td>
+                <td>Selection list option</td>
+                <td>Vital for options within a drop-down control.</td>
+              </tr>
+              <tr>
+                <td> &lt;P&gt; </td>
+                <td>Paragraph</td>
+                <td>Only use to denote a paragraph of text. Never use for spacing alone.</td>
+              </tr>              
+              <tr>
+                <td> &lt;SCRIPT&gt; </td>
+                <td>Inline script (e.g. JavaScript)</td>
+                <td>It&apos;s better to have all scripts as separate files than to write inline or in the &lt;head&gt; section, however still has its uses.</td>
+              </tr>
+              <tr>
+                <td> &lt;SELECT&gt; </td>
+                <td>Selection list</td>
+                <td>A drop-down selector for a form.</td>
+              </tr>
+              <tr>
+                <td> &lt;STYLE&gt; </td>
+                <td>CSS style settings</td>
+                <td>Normally used in <head> section of a page. Try to use external stylesheets, to enable you to apply different styles for different output media.</td>
+              </tr>              
+              </tr>              
+              <tr>
+                <td> &lt;TABLE&gt; </td>
+                <td>Table</td>
+                <td>Use for repeated data that has a naturally tabular form. Never use for layout purposes.</td>
+              </tr>
+              <tr>
+                <td> &lt;TD&gt; </td>
+                <td>Table data cell</td>
+                <td>A cell containing actual data. If a cell actually contains a descriptor or identifier for a row or column, use a &lt;th&gt; (table header) tag, not a &lt;td&gt;. This usually applies to column headers (within a &lt;thead&gt;), column footers (within a &lt;tfoot&gt;), as well as row headers (usually the first cell in a row in the &lt;tbody&gt;).</td>
+              </tr>
+              <tr>
+                <td> &lt;TEXTAREA&gt; </td>
+                <td>Multi-line text input area in a form</td>
+                <td>Essential</td>
+              </tr>
+              <tr>
+                <td> &lt;TH&gt; </td>
+                <td>Table column or row header cell</td>
+                <td>May appear in a &lt;thead&gt; (to denote a column header cell), &lt;tbody&gt; (to denote a row header), and in &lt;tfoot&gt; (to denote a column foot cell, e.g. a total)</td>
+              </tr>
+              <tr>
+                <td> &lt;TITLE&gt; </td>
+                <td>Document title</td>
+                <td>Essential</td>
+              </tr>
+              <tr>
+                <td> &lt;UL&gt; </td>
+                <td>Unordered list</td>
+                <td>Essential. Use for lists where the order or items has no particular importance.</td>
+              </tr>              
+                            
+            </table>          
+            <br/>
+          <a class="tutorialLink" href="https://webdesignfromscratch.com/html-css/html-tags/"
+          target="_blank">
+          Read the entire list here!</a>
+            <br/>
+            <br/>
+          <h3>Input Types</h3>
+          <p style="margin-left:25px; margin-bottom:5px">Input Types Boilerplate</p>
+          <div class="Inputboiler">          
+          <code>
+              &lt;form&gt; <br>
+                &emsp;&lt;input type=&quot;insertTypeHere&quot;...other parameters&gt; &lt;br&gt;<br>
+                &emsp;&lt;input type=&quot;insertTypeHere&quot;...other parameters&gt; &lt;br&gt;<br>
+                &emsp;&lt;input type=&quot;insertTypeHere&quot;...other parameters&gt; &lt;br&gt;<br>
+              &lt;/form&gt; <br>
+          </code>
+          </div>
+          <p>Below is a summary of useful Input Types for a Form. <br/>
+          Note that a form is used to collect data from a user. <br/>
+          Input Types allows the Web Site to collect specific types <br/>
+          of data from users in a user-friendly manner!</p>
+          <caption>Table 1.2 - Summary of useful Input Types for a Form</caption>
+          <table>
+              <tr>
+                <th>Tag</th>
+                <th>What it is.</th>
+                <th>When to use it.</th>
+              </tr>
+              <tr>
+                <td> &quot;text&quot; </td>
+                <td><img src="Unit1_Img/textInput.png" alt="textInput.png"></img></td>
+                <td>When you want some general non-personal data from user.</td>
+              </tr>
+              <tr>
+                <td> &quot;password&quot; </td>
+                <td><img src="Unit1_Img/passwordInput.png" alt="passwordInput.png"></img></td>
+                <td>When you need to have user credential to provide some secure service.</td>
+              </tr>
+              <tr>
+                <td> &quot;submit&quot; </td>
+                <td><img src="Unit1_Img/submitInput.png" alt="submitInput.png></img></td>
+                <td>To enable submission of user data, so almost always need to use.</td>
+              </tr>
+              <tr>
+                <td> &quot;reset&quot; </td>
+                <td><img src="Unit1_Img/resetInput.png" alt="resetInput.png"></img></td>
+                <td>When are there many input parameters, so being able to reset is convenient.</td>
+              </tr>
+              <tr>
+                <td> &quot;radio&quot; </td>
+                <td><img src="Unit1_Img/radioInput.png" alt="resetInput.png"></img></td>
+                <td>When you want an exclusive choice out of many possible choices from user.</td>
+              </tr>
+              <tr>
+                <td> &quot;checkbox&quot; </td>
+                <td><img src="Unit1_Img/checkboxInput.png" alt="resetInput.png"></img></td>
+                <td>When user can mutually choose many of the possible numerous choices.</td>
+              </tr>              
+          </table>
+          <br/>
+          <a class="tutorialLink" href="https://www.w3schools.com/html/html_form_input_types.asp"
+          target="_blank">
+          Read the entire Input Types Available here!</a>
+            <br/>
+          <p>Finally, why not watch a quick video to reinforce your knowledge of HTML5?</p>
+          <iframe id="unit1Video" src="https://www.youtube.com/embed/dmovVa0jseU" 
+          frameborder="0" allowfullscreen style="margin-left:60px"></iframe>
+          <hr></hr>
+          
+          <h3>CSS</h3>
+          <p>In short, CSS helps style your HTML elements so that you can attract your users to use your website!
+            For this portion of the tutorial, we will show you a sample HTML, and a sample CSS code. Then we
+            demonstrate the output. The CSS code will be explained in detail. It is recommended that users take
+            a screenshot with Snipping Tool, read the explanation as they highlight the code image.
+          </p>
+          <img src="Unit1_Img/navbarRESULT.png" alt="resetInput.png" style="width:500px; margin-left:25px"></img>
+          <br>
+          <br>
+          <div class="CSSTutorial1">
+          <code>
+            <!-- &lt;!DOCTYPE html&gt; <br> -->
+           /* Top Nav Bar */<br>
+             /* Add a black background<br> color to the top navigation */ <br>
+            .topnav {<br>
+                &emsp;&emsp;background-color: #333;<br>
+                &emsp;&emsp;overflow: hidden;<br>
+                &emsp;&emsp;margin-left: 30px;<br>
+                &emsp;&emsp;margin-right: 30px;<br>
+            }<br>
+
+            /* Style the links inside<br> the navigation bar */ <br>
+            .topnav a {<br>
+                &emsp;&emsp;float: left;<br>
+                &emsp;&emsp;color: #f2f2f2;<br>
+                &emsp;&emsp;text-align: center;<br>
+                &emsp;&emsp;padding: 14px 16px;<br>
+                &emsp;&emsp;text-decoration: none;<br>
+                &emsp;&emsp;font-size: 17px;<br>
+            }<br>
+
+            /* Change the color <br>of links on hover */<br>
+            .topnav a:hover {<br>
+                &emsp;&emsp;background-color: #ddd;<br>
+                &emsp;&emsp;color: black;<br>
+            }<br>
+
+            /* Add a color to the<br> active/current link */<br>
+            .topnav a.active {<br>
+                &emsp;&emsp;background-color: #4CAF50;<br>
+                &emsp;&emsp;color: white;<br>
+            }<br>
+          </code>
+          </div>
+          
+          <div class="CSSTutorial2">
+          <code>
+              &lt;div class="topnav"&gt;<br>
+                &emsp;&emsp;&lt;a href='../tma1.htm'>Home&lt;/a&gt;<br>
+                &emsp;&emsp;&lt;a href='../part1/part1.xml'>Part 1&lt;/a&gt;<br>
+                &emsp;&emsp;&lt;a class="active">Part 2&lt;/a&gt;<br>
+                &emsp;&emsp;&lt;a href="#about">Part 3&lt;/a&gt;<br>
+                &emsp;&emsp;&lt;a href="#news">Part 4&lt;/a&gt;<br>
+                &emsp;&emsp;&lt;a href="#news">Full Documentation&lt;/a&gt;<br>
+                &emsp;&emsp;&lt;a href="#contact">Contact&lt;/a&gt;<br>
+                &emsp;&emsp;&lt;a href="#about">About&lt;/a&gt;<br>
+              &lt;/div&gt;<br>
+          </code>
+          </div>
+          
+          <div class="CSSTutorial3">
+          <h3>Explanation</h3>
+          <p>Consider the HTML code. It is a precursor to what will become the
+            beautiful, shiny, black and green navbar that you see at the top.
+            There is a selector called "active" in the HTML code which defines
+            which tab is being given the CSS property of "active" or the current
+            tab active or being selected. If specified in HTML, the default Active
+            styling is given to the tab with active class assigned. Hence, this tab
+            is given a different styling compared to other tabs as you can notice
+            (HINT: It is Green!).
+            <br><br>
+            The first set of styling within the brackets colors the tabs with
+            lighter shade of black, as well as create some left and right margins.
+          </p>
+          </div>
+          <div class="CSSTutorial3b">
+            <h3>Explanation Continued</h3>
+            <p>
+            The second set of styling helps pad the inner texts of the links 
+            (&lt;a&gt; tag) found within the tabs as well as centering it.
+            The Tabs are "floating" or being made to have the point of reference
+            to start from the left-hand side. Also, a font color of darker
+            shade of white is given to the texts.
+            <br><br>
+            The third set of styling within the brackets styles the links found within
+            the navbar (the &lt;a&gt; tag). This time the selector is hover, so this
+            styling is applied while the user hovers over the tabs. Simple changes in
+            color occurs.
+            <br>
+            The fourth set of styling has the active selector. This style is applied
+            after the user clicks and activates the selected link or tab. Again,
+            a simple set of colour changes occur.
+            </p>
+          </div>
+          <br>
+          
+          <a class="tutorialLink" href="https://www.w3schools.com/cssref/"
+          style="margin-left:45px" target="_blank">
+          Reference of CSS properties.</a>
+          <a class="tutorialLink" href="WebDevCrashCourse.pdf"
+          target="_blank">
+          Nice Summary of Unit 1 Here.</a>
+          <hr style="margin-bottom:-10px"></hr>
+          <br/>
+          <div class="quizLinkDiv"><button class="quizLink quizLink1">Go To Quiz</button></div>
+        </div>
+
+        <div id="Unit2" class="tabcontent unit2">
+          <br/>
+          <br/>        
+          <hr class="tabcontentdivider2"></hr>
+          <h2>Unit 2 - Javascript (and Client-Side Scripting)</h2>
+            <h3>Reference used to create this tutorial:</h3>
+            <a class="tutorialLink" href="https://htmlcheatsheet.com/js/" 
+            target="_blank">Interactive Code Reference</a>
+            <br><br>
+            <hr class="tabcontentdivider2"></hr>
+            <h3>How to include a Javascript (.js) file in HTML?</h3>
+            <div class="includeJSFile">
+            <p>To include Javascript code into your HTML files, you need to link it as
+            shown below. Remember, it is usually better to link your .js file at the end
+            of your HTML file so that all the elements in that webpage loads before your
+            .js file attempts to get access to those elements.</p>
+            </div>
+            <div class="javascriptBoiler">
+            <code>
+                &lt;body&gt;<br>
+                &emsp;&emsp;//Include the link to JavaScript Codes at the end!!<br>
+                &emsp;&emsp;&lt;script src="theJavascriptCode.js"&gt;&lt;/script&gt;<br>
+                &lt;/body&gt;
+            </code>
+            </div>
+            <br/>                  
+            <hr class="tabcontentdivider2"></hr>
+            <h3>Basics</h3>
+                <img style="margin-bottom:15px" src="Unit2_Img/Basics.png" alt="resetInput.png"></img>
+                <p class="Unit2Explanation">Here the basics of JavaScript is shown. Make sure to include your
+                JavaScript code in your HTML so that it can work! DOM is used to get access to elements on Webpage
+                and allow you to modify them accordingly. You can debug using various outputs available in JS.
+                Most common way to debug in real-time is to use the console.log() to log your results into the browser!
+                Remember to comment lots on your code to help you document your code!</p>
+            <br/>                  
+            <hr class="tabcontentdivider2"></hr>
+            <h3>Data Types</h3>
+                <img style="margin-bottom:15px" src="Unit2_Img/DataType.png" alt="resetInput.png"></img>
+                <p class="Unit2Explanation">Here, a list of different data type initialization is shown.
+                Remember, in JS, you convert your vars into data type by initialization using the appropriate
+                value. You can also use objects to help store all info of objects you create to help you condense
+                important vars into one location (the object).</p>
+            <br/>                  
+            <hr class="tabcontentdivider2"></hr>
+            <h3>Loops</h3>
+                <img style="margin-bottom:15px" src="Unit2_Img/Loops.png" alt="resetInput.png"></img>
+                <p class="Unit2Explanation">There are many ways to do loops in JS, just pick the right one for the
+                specific problem you are solving!</p>
+            <br/>
+            <hr class="tabcontentdivider2"></hr>
+            <h3>Arrays</h3>
+                <img style="margin-bottom:15px" src="Unit2_Img/Arrays.png" alt="resetInput.png"></img>
+                <p class="Unit2Explanation">Instead of using objects (although objects can store arrays),
+                you can use Arrays to store similar data into one variable. All you classic Data Structure
+                functions like pop, push etc. are available for your use!</p>
+            <br/>            
+            <hr class="tabcontentdivider2"></hr>
+            <h3>Variables 1</h3>
+                <img style="margin-bottom:-5px" src="Unit2_Img/Vars1.png" alt="resetInput.png"></img>
+                <img style="margin-bottom:15px" src="Unit2_Img/Vars2.png" alt="resetInput.png"></img>
+                <p class="Unit2Explanation">More in-depth look into variables shown. 
+                If you initialize a variable without a value, it is called undefined.
+                Once you initialize it, it can take on numerous data types.
+                "use strict" mode enforces the programmer to not be able to use
+                any undeclared variables. Again, many of the common arithmetic/
+                programming operations are usable in JavaScript.</p>
+            <br/>                  
+            <hr class="tabcontentdivider2"></hr>
+            <h3>Conditionals</h3>
+                <img style="margin-bottom:15px" src="Unit2_Img/IfElse.png" alt="resetInput.png"></img>
+                <p class="Unit2Explanation">The essential and fundamental conditional
+                statements shown. Two flavours: if-else and switch statement.</p>
+            <br/>                  
+            <hr class="tabcontentdivider2"></hr>
+            <h3>Strings</h3>
+                <img style="margin-bottom:15px" src="Unit2_Img/Strings.png" alt="resetInput.png"></img>
+                <p class="Unit2Explanation">Strings and its common operations.</p>
+            <br/>                  
+            <hr class="tabcontentdivider2"></hr>
+            <h3>Math</h3>
+                <img style="margin-bottom:15px" src="Unit2_Img/Math.png" alt="resetInput.png"></img>
+                <p class="Unit2Explanation">Math and its common operations.</p>
+            <br/>
+            <hr class="tabcontentdivider2"></hr>
+            <h3>Events</h3>
+                <img style="margin-bottom:15px" src="Unit2_Img/Events.png" alt="resetInput.png"></img>
+                <p class="Unit2Explanation">Events are an interactive way to add
+                functionalities to your Websites. When certain events (like a click
+                on a button, or hovering over a certain div tag etc.) occurs,
+                you can add event functions to do certain actions. This is the correct
+                way of handling events, as opposed to including inline JavaScript
+                code in your HTML, or using numerous If-Else Statements to detect
+                these events. Use events to make your Websites epic!</p>
+            <br/>
+            
+            <hr class="tabcontentdivider2"></hr>            
+            <h3>Errors</h3>
+                <img style="margin-bottom:15px" src="Unit2_Img/Errors.png" alt="resetInput.png"></img>
+                <p class="Unit2Explanation">Every system can have errors. To handle
+                JavaScript Errors (any programming errors), you can "catch" these
+                errors. You can "try" the actions that you want to do, and if
+                errors occur, catch those errors and proceed as needed. You can 
+                also validate inputs from client-side, but you can also use
+                smart HTML input forms to take care of most of the input
+                validation.</p>
+            <br/>
+            <hr class="tabcontentdivider2"></hr>
+            <h3>Date</h3>
+                <img style="margin-bottom:15px" src="Unit2_Img/Date.png" alt="resetInput.png"></img>
+                <p class="Unit2Explanation">If your web application needs to manage
+                time, dates, and calendar related data, use the Dates functionality
+                to obtain the data you need. Time reference made relative to 1970.</p>
+            <br/>           
+            <hr class="tabcontentdivider2"></hr>
+            <h3>Global Functions</h3>
+                <img style="margin-bottom:15px" src="Unit2_Img/GlobalFunction.png" alt="resetInput.png"></img>
+                <p class="Unit2Explanation">"Find out the difference between global and local variables. 
+                Global variables are declared outside any function, and they can be accessed (used) on 
+                any function in the program. Local variables are declared inside a function, and 
+                can be used only inside that function. It is possible to have local variables with 
+                the same name in different functions. Even the name is the same, they are not the
+                same. It's like two people with the same name. Even the name is the same, the persons are not.
+                The scope of a variable refers to where is a variable visible or accessible. 
+                If a person asks what is the scope of a variable, she's asking whether it is local or global."</p>
+            <a class="tutorialLink" href="https://funprogramming.org/50-What-are-global-and-local-variables.html"
+            style="margin-left:45px; margin-bottom:20px" target="_blank">
+            Read More About Scopes.</a>                
+            <br/>
+            <hr class="tabcontentdivider2"></hr>
+            <h3>JSON</h3>
+                <img style="margin-bottom:15px" src="Unit2_Img/JSON.png" alt="resetInput.png"></img>
+                <p class="Unit2Explanation">JSON: JavaScript Object Notation. 
+                JSON is a syntax for storing and exchanging data.
+                JSON is text, written with JavaScript object notation.
+                Data transfer between a browser and a server must be done through
+                texts. Hence we use JSON to simplify the data transfer since JSON
+                is a text, and JSON format is JavaScript friendly, so no complicated
+                parsing or translation is required.
+                </p>
+            <br/>     
+            <hr class="tabcontentdivider2"></hr>
+            <h3>Regular Expressions</h3>
+                <img style="margin-bottom:15px" src="Unit2_Img/RegularExpressions.png" alt="resetInput.png"></img>
+                <p class="Unit2Explanation">Various regex shown to help you
+                search for certain expressions/patterns within an expression.
+                Useful for applications where searching for something specific.</p>
+            <br/>                 
+            <hr class="tabcontentdivider2"></hr>
+            <div class="quizLinkDiv"><button class="quizLink quizLink2">Go To Quiz</button></div>            
+        </div>
+
+        <div id="Unit3" class="tabcontent unit3">
+          <br/>
+          <br/>
+          <!-- <hr class="tabcontentdivider"></hr> -->
+          <h2>Unit 3 - XML and Ajax</h2>
+            <h3>Two Best Ajax and XML tutorials:</h3>
+            <a class="tutorialLink" href="https://www.tutorialspoint.com/ajax/index.htm" 
+            target="_blank">Ajax</a>
+            <a class="tutorialLink" href="https://www.w3schools.com/xml/ajax_intro.asp" 
+            target="_blank">Ajax and XML</a>
+            <br><br>
+            <hr class="tabcontentdivider3"></hr>
+            <h3>What is XML?</h3>
+            <p class="Unit3Explanation">"XML plays an important role in many different IT systems.
+            XML is often used for distributing data over the Internet.
+            It is important (for all types of software developers!) 
+            to have a good understanding of XML."</p>
+            <caption>Below is an example XML code:</caption>
+            <p class="XMLboiler">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;<br>
+            &lt;note&gt;<br>&nbsp; &lt;to&gt;Tyquan&lt;/to&gt;<br>
+            &nbsp; &lt;from&gt;Shaniqua&lt;/from&gt;<br>
+            &nbsp; &lt;heading&gt;Reminder&lt;/heading&gt;<br>
+            &nbsp; &lt;body&gt;Don't forget me this weekend!&lt;/body&gt;<br>
+            &lt;/note&gt;
+            </p>
+            <br><br>
+
+            <img src="Unit3/zoom-in.png" id="zoom-in" alt="resetInput.png">
+            <img src="Unit3/zoom-out.png" id="zoom-out" alt="resetInput.png">
+            <embed class="pdfViewer" src="Unit3/XML_cheatsheet.pdf" alt="resetInput.png"></embed>
+            <hr style="margin-top:20px" class="tabcontentdivider3"></hr>
+            <h3>What is Ajax?</h3>
+            <h4>A way to refresh portions of the webpage without reloading the
+            entire web page.</h4>
+            <p>Web 2.0 is possible thanks to Ajax! You can: 
+            Update a web page without reloading the entire page.
+            Request or receive data from a server, even after 
+            the page has loaded. You can even send data to the server
+            in the background, even while your page is busy running
+            code.</p>
+            <img src="Unit3/zoom-in.png" id="zoom-in2" alt="resetInput.png">
+            <img src="Unit3/zoom-out.png" id="zoom-out2" alt="resetInput.png">
+            <embed class="pdfViewer" src="Unit3/ajax_cheatsheet.pdf"></embed>
+            <br><br>
+            <p>Learn about the difference between Get and Post request below. This is important
+            when working as a web developer since you will be making requests to server, and
+            knowing whether to use Get or Post requests to the server can make a difference.</p>
+            <a class="tutorialLink" href="https://www.diffen.com/difference/GET-vs-POST-HTTP-Requests" 
+            target="_blank">GET vs. POST</a>
+            <br><br>
+            <hr class="tabcontentdivider3"></hr>
+            <div class="quizLinkDiv"><button class="quizLink quizLink3">Go To Quiz</button></div>            
+        </div>
+
+        <div id="TryQuiz" class="tabcontent tryquiz">
+          <br/>
+          <br/>
+          <hr class="tabcontentdivider"></hr>
+          <h3>Try Quiz</h3>
+          <p>Disclaimer: Do not reload webpage while attemping quiz, all progress will be erased!</p>
+          <div class="quizMenuContainer">
+              <a class="quizMenu quizMenu1">Unit 1 Quiz</a>
+              <a class="quizMenu quizMenu2">Unit 2 Quiz</a>
+              <a class="quizMenu quizMenu3">Unit 3 Quiz</a>
+          </div>
+
+          <!-- <p><b></b> <span id="A1"></span></p> -->
+          <div class="QuizContainer">
+          <!--   Insert the Quiz Questions here using HTML DOM! -->
+          
+          </div>
+        </div>
+        
+        <div id="EditQuiz" class="tabcontent editquiz">
+          <br/>
+          <br/>
+          <hr class="tabcontentdivider"></hr>
+          <h3 class="editQuizHeader">Edit Quiz</h3>
+          <p>Disclaimer: Reloading webpage will be erase any changes made while editing quiz!</p>
+          <p>Please edit the selected quiz below. Note the minimum size of a
+             quiz must be 7 questions, and all four choices must be filled.</p>
+            <div class="editMenuContainer">
+              <!--System must be able to modify existing questions.
+              System also must be able to create new quiz. -->
+              <a class="editMenu editMenu1">Edit an existing Quiz</a>
+              <a class="editMenu editMenu2">Create a new Quiz</a>
+              <a class="editMenu editMenu3">Delete an existing Quiz</a>
+              <br/>
+            </div>
+            <div class="editQuizButtonContainer">
+            
+            </div>
+            <div class="editQuizQuestionContainer">
+            
+            </div>
+            <div class="spaceFiller>
+            <!--   Insert the UI to manage the 2 main
+            functionalities using HTML DOM! -->
+            <p class="spaceFiller"></p>
+            </div>
+        </div>
+
+    </div>
+    
+    
+    
+    
+    </div>
+    <footer>
+        <hr id="footerLine"></hr>
+        Copyright &copy; 2018 Moshiur Howlader. All rights reserved. <br/>
+    </footer>
+    <script src="part2.js"></script>
+  </body>
+</html>
